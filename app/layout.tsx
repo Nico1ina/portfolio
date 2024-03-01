@@ -17,12 +17,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="bg-[#ece7e1] justify-between">
-        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-        <main className="flex-grow">{children}</main>
-        <div className="flex justify-end items-end font-mono">
+      <body className="container mx-auto h-[100vh] w-[100vw] overflow-hidden bg-[#ece7e1]">
+        <main className="flex-grow">
+          {children}
           <VerticalNav />
-        </div>
+        </main>
       </body>
     </html>
   );
