@@ -1,38 +1,31 @@
-import Image from "next/image";
-import Img from "@/public/IMG_0839.jpg";
-import Link from "next/link";
+import Menu from "@/src/ui/components/navigation/Menu/Menu";
 
 export default function Page() {
   return (
-    <div
-      style={{
-        position: "relative",
-        width: "100vw",
-        height: "100vh",
-      }}
-    >
-      <Image src={Img} layout="fill" objectFit="cover" alt="Background Image" />
-
-      <Link
-        href="/"
-        className="absolute top-0 left-0 text-white hover:text-[#FFB6C1] text-[30px] z-10 ml-3"
-      >
-        ←
-      </Link>
-      <div
-        style={{
-          position: "absolute",
-          top: "50%",
-          left: "50%",
-          transform: "translate(-50%, -50%)",
-          zIndex: 1,
-          textAlign: "center",
-        }}
-      >
-        <h1 className="text-white text-[50px] font-mono pb-[250px]">
-          [UNDER CONSTRUCTION]
-        </h1>
+    <main className="bg-[#ece7e1] flex flex-col border border-[#1a1818]">
+      <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+      <div className="flex flex-row justify-between">
+        <div id="mySidenav" className="font-serif ml-10">
+          <section className="text-[#1a1818]">
+            <ul className="flex-col sans font-serif text-[190px]">
+              <li className="tracking-widest hover:italic transition ease-in-out delay-150 hover:translate-x-20 duration-200">
+                <a href="/work">━Work</a>
+              </li>
+              <li className="tracking-widest hover:italic transition ease-in-out delay-150 hover:translate-x-20 duration-200">
+                <a href="/about">━About</a>
+              </li>
+              <li className="tracking-widest hover:italic transition ease-in-out delay-150 hover:translate-x-20 duration-200">
+                <a href="mailto:nicolinalarsson1@gmail.com?subject=Lets work together!">
+                  ━Contact
+                </a>
+              </li>
+            </ul>
+          </section>
+        </div>
+        <div className="text-[100px] mr-20 mt-10">
+          <Menu />
+        </div>
       </div>
-    </div>
+    </main>
   );
 }

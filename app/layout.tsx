@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import VerticalNav from "@/src/ui/components/navigation/VerticalNav/VerticalNav";
+import Menu from "@/src/ui/components/navigation/Menu/Menu";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,9 +20,6 @@ export default function RootLayout({
       <body className="bg-[#ece7e1] justify-between">
         <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
         <main className="flex-grow">{children}</main>
-        <div className="flex justify-end items-end font-mono">
-          <VerticalNav />
-        </div>
       </body>
     </html>
   );
