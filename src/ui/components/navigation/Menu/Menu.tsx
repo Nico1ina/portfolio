@@ -16,12 +16,13 @@ const Menu = () => {
             data-te-nav-item-ref
           >
             <a
-              className="hover:text-[#d4cfc9] text-3xl lg:px-2"
+              className="hover:text-[#d4cfc9] text-3xl lg:px-2 group transition duration-300"
               aria-current="page"
               href="/"
               data-te-nav-link-ref
             >
               Front End designer
+              <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-[#d4cfc9]"></span>
             </a>
           </li>
         </ul>

@@ -8,7 +8,7 @@ const FullScreenMenu = () => {
   return (
     <>
       <button
-        className="flex flex-col h-12 w-12 justify-center items-center group hover:cursor-pointer hover:text-[#d4cfc9]"
+        className="flex flex-col h-12 w-12 justify-center items-center group hover:cursor-pointer pr-10"
         onClick={() => setShowSidebar(!showSidebar)}
       >
         <div
