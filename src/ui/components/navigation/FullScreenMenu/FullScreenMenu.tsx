@@ -8,7 +8,7 @@ const FullScreenMenu = () => {
   return (
     <>
       <button
-        className="flex flex-col h-12 w-12 justify-center items-center group hover:cursor-pointer pr-10"
+        className="flex flex-col h-12 w-12 justify-center items-center group hover:cursor-pointer pr-10 z-[999]"
         onClick={() => setShowSidebar(!showSidebar)}
       >
         <div
@@ -29,7 +29,7 @@ const FullScreenMenu = () => {
       </button>
 
       <div
-        className={`top-20 right-0 w-[100vw] bg-[#ece7e1] p-10 pl-20 text-[#1a1818] fixed h-full z-40 ease-in-out duration-300 ${
+        className={`top-0 right-0 w-[100vw] bg-[#ece7e1] p-10 pl-20 text-[#1a1818] fixed h-full z-40 ease-in-out duration-300 ${
           showSidebar ? "translate-x-0 " : "translate-x-full"
         }`}
       >
