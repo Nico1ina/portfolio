@@ -35,9 +35,9 @@ const FullScreenMenu = () => {
       >
         <div id="mySidenav" className="font-serif">
           <section className="text-[#1a1818]">
-            <ul className="flex-col sans font-serif text-[80px] md:text-[130px] lg:text-[170px]">
+            <ul className="flex-col sans font-serif text-[45px] sm:text-[100px] md:text-[130px] lg:text-[170px]">
               <li className="tracking-widest hover:italic transition ease-in-out delay-150 hover:translate-x-20 duration-200">
-                <a href="/work">━Work</a>
+                <a href="/">━Work</a>
               </li>
               <li className="tracking-widest hover:italic transition ease-in-out delay-150 hover:translate-x-20 duration-200">
                 <a href="/about">━About</a>

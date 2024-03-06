@@ -1,5 +1,6 @@
 import Menu from "@/src/ui/components/navigation/Menu/Menu";
 import Footer from "@/src/ui/components/navigation/Footer/Footer";
+import Animation from "@/src/ui/components/navigation/Animation/Animation";
 
 export default function Home() {
   return (
