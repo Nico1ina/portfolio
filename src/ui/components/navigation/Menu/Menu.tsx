@@ -21,7 +21,7 @@ const Menu = () => {
               href="/"
               data-te-nav-link-ref
             >
-              Front End designer
+              Front End Designer
               <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-[#d4cfc9]"></span>
             </a>
           </li>

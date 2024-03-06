@@ -3,7 +3,7 @@ import React, { useState } from "react";
 
 const FullScreenMenu = () => {
   const [showSidebar, setShowSidebar] = useState(false);
-  const genericHamburgerLine = `h-1 w-7 my-1 rounded-full bg-black transition ease transform duration-300`;
+  const genericHamburgerLine = `h-0.5 w-7 my-1 bg-black rounded-full transition ease transform duration-300`;
 
   return (
     <>
@@ -13,7 +13,7 @@ const FullScreenMenu = () => {
       >
         <div
           className={`${genericHamburgerLine} ${
-            showSidebar ? "rotate-45 translate-y-3" : " "
+            showSidebar ? "rotate-45 translate-y-2" : " "
           }`}
         />
         <div
@@ -35,7 +35,7 @@ const FullScreenMenu = () => {
       >
         <div id="mySidenav" className="font-serif">
           <section className="text-[#1a1818]">
-            <ul className="flex-col sans font-serif text-[170px]">
+            <ul className="flex-col sans font-serif text-[80px] md:text-[130px] lg:text-[170px]">
               <li className="tracking-widest hover:italic transition ease-in-out delay-150 hover:translate-x-20 duration-200">
                 <a href="/work">━Work</a>
               </li>
