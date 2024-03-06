@@ -49,8 +49,8 @@ export default function Page() {
           <div className="flex">
             <div className="flex w-0 md:w-1/2" />
             <div className="flex gap-2 font-mono pt-4">
-              <button className="group relative inline-flex items-center overflow-hidden rounded-full border border-[#1a1818] bg-[#1a1818] text-[#ece7e1] px-12 py-3 text-lg text-[#1a1818] hover:text-white">
-                <span className="duration-400 ease absolute left-0 top-1/2 block h-0 w-full bg-[#1a1818] opacity-100 transition-all group-hover:top-0 group-hover:h-full"></span>
+              <button className="group relative inline-flex items-center overflow-hidden rounded-full border border-[#1a1818] bg-[#1a1818] text-[#ece7e1] px-12 py-3 text-lg hover:text-[#1a1818]">
+                <span className="duration-400 ease absolute left-0 top-1/2 block h-0 w-full bg-[#ece7e1] opacity-100 transition-all group-hover:top-0 group-hover:h-full"></span>
                 <span className="ease absolute right-0 flex h-10 w-10 translate-x-full transform items-center justify-start duration-500 group-hover:-translate-x-2">
                   <svg
                     className="h-5 w-5"
