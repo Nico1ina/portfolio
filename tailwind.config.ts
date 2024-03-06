@@ -16,15 +16,42 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       keyframes: {
-        //Our fall animation keyframes
+        // Existing fall animation keyframes
         fall: {
           "0%": { transform: "translate(0%,0%) skewX(0deg)" },
           "100%": { transform: "translate(0%,100%) skewX(0deg)" },
         },
+        // New typewriter and blink keyframes
+        typewriter: {
+          to: {
+            left: "100%",
+          },
+        },
+        blink: {
+          "0%": {
+            opacity: "0",
+          },
+          "0.1%": {
+            opacity: "1",
+          },
+          "50%": {
+            opacity: "1",
+          },
+          "50.1%": {
+            opacity: "0",
+          },
+          "100%": {
+            opacity: "0",
+          },
+        },
       },
-
       animation: {
+        // Existing fall animation
         fall: "fall 3s ease infinite",
+        // New typewriter and caret animations
+        typewriter: "typewriter 2s steps(11) forwards",
+        caret:
+          "typewriter 2s steps(11) forwards, blink 1s steps(11) infinite 2s",
       },
     },
   },

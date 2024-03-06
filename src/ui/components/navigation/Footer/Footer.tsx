@@ -17,7 +17,7 @@ const Footer: React.FC = () => {
           href="mailto:nicolinalarsson1@gmail.com?subject=Lets work together!"
           className="invisible md:invisible lg:visible pl-10 hover:text-[#d4cfc9] group transition duration-300"
         >
-          Send me a message!
+          Send me a message →
           <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-[#d4cfc9]"></span>
         </a>
         <p>Copyright © Nicolina Larsson 2024</p>

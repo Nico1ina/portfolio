@@ -1,30 +1,17 @@
 const Animation = () => {
-  const firstWord = "Nicolina";
-  const secondWord = "Larsson";
-
-  const renderWordAnimation = (word: string, startingDelay: number) => {
-    return word.split("").map((letter, index) => (
-      <span
-        key={index}
-        className={`animate-fall animation-delay-[${
-          startingDelay + index * 50
-        }ms] translate-y-[-150%]`}
-      >
-        {letter}
-      </span>
-    ));
-  };
-
   return (
-    <span className="relative inline-flex ml-2 overflow-hidden p-2 text-black">
-      <div className="flex flex-row">{renderWordAnimation(firstWord, 0)}</div>
-
-      <span className="absolute top-0 bottom-0 text-black">
-        <div className="flex flex-row">
-          {renderWordAnimation(secondWord, 1500)}
-        </div>
-      </span>
-    </span>
+    <div className="overflow-hidden relative group">
+      <div className="animate-slide-down absolute bottom-10 left-0 w-full h-full flex items-center justify-center">
+        <h1 className="text-2xl font-bold text-white animate-fall font-mono italic">
+          LARSSON
+        </h1>
+      </div>
+      <div className="animate-slide-up absolute bottom-0 left-0 w-full h-full flex items-center justify-center">
+        <h1 className="text-2xl font-bold text-white animate-fall font-mono italic">
+          NICOLINA
+        </h1>
+      </div>
+    </div>
   );
 };
 
