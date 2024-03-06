@@ -29,13 +29,13 @@ const FullScreenMenu = () => {
       </button>
 
       <div
-        className={`top-0 right-0 w-[100vw] bg-[#ece7e1] p-10 pl-20 text-[#1a1818] fixed h-full z-40 ease-in-out duration-300 ${
+        className={`top-0 right-0 w-[100vw] bg-[#ece7e1] p-10 text-[#1a1818] fixed h-full z-40 ease-in-out duration-300 ${
           showSidebar ? "translate-x-0 " : "translate-x-full"
         }`}
       >
         <div id="mySidenav" className="font-serif">
           <section className="text-[#1a1818]">
-            <ul className="flex-col sans font-serif text-[45px] sm:text-[100px] md:text-[130px] lg:text-[170px]">
+            <ul className="flex-col sans font-serif text-[50px] sm:text-[100px] md:text-[130px] lg:text-[170px]">
               <li className="tracking-widest hover:italic transition ease-in-out delay-150 hover:translate-x-20 duration-200">
                 <a href="/">━Work</a>
               </li>
