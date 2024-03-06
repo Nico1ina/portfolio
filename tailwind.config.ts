@@ -14,6 +14,17 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      keyframes: {
+        //Our fall animation keyframes
+        fall: {
+          "0%": { transform: "translate(0%,0%) skewX(0deg)" },
+          "100%": { transform: "translate(0%,100%) skewX(0deg)" },
+        },
+      },
+
+      animation: {
+        fall: "fall 3s ease infinite",
+      },
     },
   },
   plugins: [],
