@@ -3,6 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "license": "MIT",
+  "engines": {
+    "npm": "Please use yarn engine",
+    "yarn": ">=1.x"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
