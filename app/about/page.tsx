@@ -13,6 +13,7 @@ export default function Page() {
           </a>
           <FullScreenMenu />
         </div>
+        {/*TODO: Fix this img so it doesn't give a warning*/}
         <img
           className='lg:absolute md:absolute visible sm:visible md:invisible lg:ininvisible justify-center place-self-center h-[170px] w-[170px] rounded-full sm:h-[200px] sm:w-[200px] md:h-[250px] md:w-[250px] lg:h-[300px] lg:w-[300px]'
           src='https://media.licdn.com/dms/image/D4D03AQG40y1wkBFb1Q/profile-displayphoto-shrink_800_800/0/1677610358836?e=2147483647&v=beta&t=QfUw8q2KBRhnQwq1jduNkJ18hMCFeSBzagebX0GdkZk'
@@ -30,7 +31,7 @@ export default function Page() {
             FRONT END DEVELOPER
           </h1>
           <img
-            className='absolute invisible sm:invisible md:invisible lg:visible right-40 top-20 z-10 h-[170px] w-[170px] rounded-full sm:h-[200px] sm:w-[200px] md:h-[250px] md:w-[250px] lg:h-[300px] lg:w-[300px]'
+            className='absolute invisible sm:invisible md:invisible lg:visible right-[50px] top-20 z-10 h-[170px] w-[170px] rounded-full sm:h-[200px] sm:w-[200px] md:h-[250px] md:w-[250px] lg:h-[300px] lg:w-[300px]'
             src='https://media.licdn.com/dms/image/D4D03AQG40y1wkBFb1Q/profile-displayphoto-shrink_800_800/0/1677610358836?e=2147483647&v=beta&t=QfUw8q2KBRhnQwq1jduNkJ18hMCFeSBzagebX0GdkZk'
             alt=''
           />
@@ -65,9 +66,9 @@ export default function Page() {
                     xmlns='http://www.w3.org/2000/svg'
                   >
                     <path
-                      stroke-linecap='round'
-                      stroke-linejoin='round'
-                      stroke-width='1'
+                      strokeLinecap='round'
+                      strokeLinejoin='round'
+                      strokeWidth='1'
                       d='M14 5l7 7m0 0l-7 7m7-7H3'
                     ></path>
                   </svg>
@@ -92,9 +93,9 @@ export default function Page() {
                     xmlns='http://www.w3.org/2000/svg'
                   >
                     <path
-                      stroke-linecap='round'
-                      stroke-linejoin='round'
-                      stroke-width='1'
+                      strokeLinecap='round'
+                      strokeLinejoin='round'
+                      strokeWidth='1'
                       d='M14 5l7 7m0 0l-7 7m7-7H3'
                     ></path>
                   </svg>
@@ -102,18 +103,14 @@ export default function Page() {
                 <span className='relative transform duration-700 group-hover:-translate-x-3 font-mono'>
                   <a
                     className='focus:outline-none'
-                    href='mailto:nicolinalarsson1@gmail.com?subject=Lets work together!'
+                    href='./directory/yourfile.pdf'
+                    download
                   >
+                    {/* TODO: Add pdf to this button*/}
                     RESUME PDF
                   </a>
                 </span>
               </button>
-              {/* <button className="rounded-full border border-[#1a1818] p-2 text-[#1a1818] transition delay-150 duration-200 ease-in-out hover:translate-x-1 hover:scale-110 focus:outline-none focus:ring focus:ring-[#d4cfc9]">
-                RESUME PDF
-              </button>*/}
-
-              {/* This is how to add a download
-                <a className="" href="./directory/yourfile.pdf" download>Download the pdf</a> */}
             </div>
           </div>
         </div>
