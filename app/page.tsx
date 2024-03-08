@@ -6,7 +6,7 @@ export default function Home() {
     <div className='bg-[#ece7e1] flex flex-col min-h-screen justify-between overflow-hidden relative'>
       <Menu />
       <h1
-        className='relative w-full text-left justify-center font-mono
+        className='flex relative w-full text-center justify-center font-mono
 before:absolute before:inset-0 before:animate-typewriter
 before:bg-[#ece7e1]
 after:absolute after:inset-0 after:w-[0.125em] after:animate-caret
