@@ -15,7 +15,7 @@ const Menu = () => {
             data-te-nav-item-ref
             className='hover:text-[#d4cfc9] text-3xl lg:px-2 group transition duration-300 my-4 pl-2 lg:my-0 lg:pl-2 lg:pr-1'
           >
-            Front End Developer
+            Front End Dev
             <span className='block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-[#d4cfc9]'></span>
           </li>
         </ul>

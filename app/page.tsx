@@ -10,7 +10,7 @@ export default function Home() {
 before:absolute before:inset-0 before:animate-typewriter
 before:bg-[#ece7e1]
 after:absolute after:inset-0 after:w-[0.125em] after:animate-caret
-after:bg-[#1a1818] text-[40px] sm:text-[70px] md:text-[90px] lg:text-[135px] pl-10'
+after:bg-[#1a1818] text-[30px] sm:text-[70px] md:text-[90px] lg:text-[135px] pl-10'
       >
         Nicolina Larsson
       </h1>
