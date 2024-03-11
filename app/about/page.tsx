@@ -26,7 +26,7 @@ export default function Page() {
           </h2>
         </div>
         <div className='flex flex-row text-[#1a1818]'>
-          <h1 className='z-20 ml-20 mt-6 font-mono text-[30px] sm:text-[40px] md:text-[70px] lg:text-[100px] animate-slidein opacity-0 [--slidein-delay:500ms]'>
+          <h1 className='z-20 ml-10 md:ml-20 lg:ml-20 xlg:ml-20 mt-6 font-mono text-[30px] sm:text-[40px] md:text-[70px] lg:text-[100px] animate-slidein opacity-0 [--slidein-delay:500ms]'>
             ...I AM A JUNIOR <br />
             FRONT END DEVELOPER
           </h1>
