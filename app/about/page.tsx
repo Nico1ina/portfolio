@@ -7,7 +7,7 @@ export default function Page() {
         <div className='flex flex-row justify-between m-5'>
           <a
             href='/'
-            className='text-[#1a1818] hover:text-[#d4cfc9] pl-2 text-[30px] transition delay-150 duration-200 ease-in-out hover:-translate-x-1 hover:scale-110'
+            className='text-[#1a1818] hover:text-[#d4cfc9] pl-2 text-3xl transition delay-150 duration-200 ease-in-out hover:-translate-x-1 hover:scale-110'
           >
             ←
           </a>
@@ -15,34 +15,34 @@ export default function Page() {
         </div>
         {/*TODO: Fix this img so it doesn't give a warning*/}
         <img
-          className='lg:absolute md:absolute visible hover:grayscale sm:hover:grayscale sm:visible md:invisible lg:ininvisible justify-center place-self-center h-[170px] w-[170px] rounded-full sm:h-[200px] sm:w-[200px] md:h-[250px] md:w-[250px] lg:h-[300px] lg:w-[300px]'
+          className='lg:absolute md:absolute visible hover:grayscale sm:hover:grayscale sm:visible md:invisible lg:ininvisible justify-center place-self-center h-[170px] w-[170px] rounded-full sm:h-[200px] sm:w-[200px] md:h-[250px] md:w-[250px] lg:h-[300px] lg:w-[300px] animate-slidein opacity-0 [--slidein-delay:300ms]'
           src='https://media.licdn.com/dms/image/D4D03AQG40y1wkBFb1Q/profile-displayphoto-shrink_800_800/0/1677610358836?e=2147483647&v=beta&t=QfUw8q2KBRhnQwq1jduNkJ18hMCFeSBzagebX0GdkZk'
           alt=''
         />
-        <div className='mt-3 sm:mt-3 md:mt-20 lg:mt-20 ml-20 z-30 font-mono text-[17px] sm:text-[17px] md:text-[25px] lg:text-[30px] text-[#1a1818]'>
-          <h2>
+        <div className='mt-3 sm:mt-3 md:mt-10 lg:mt-10 ml-10 md:ml-20 lg:ml-20 z-30 font-mono text-3xl text-[#1a1818]'>
+          <h2 className='animate-slidein opacity-0 [--slidein-delay:300ms]'>
             Hello, my name is <span className='font-bold'>Nicolina&nbsp;</span>
-            and
+            and...
           </h2>
         </div>
         <div className='flex flex-row text-[#1a1818]'>
-          <h1 className='z-20 ml-20 font-mono text-[40px] sm:text-[40px] md:text-[70px] lg:text-[100px]'>
-            I AM A JUNIOR <br />
+          <h1 className='z-20 ml-20 mt-6 font-mono text-[30px] sm:text-[40px] md:text-[70px] lg:text-[100px] animate-slidein opacity-0 [--slidein-delay:500ms]'>
+            ...I AM A JUNIOR <br />
             FRONT END DEVELOPER
           </h1>
           <img
-            className='absolute invisible sm:invisible md:invisible lg:visible right-[50px] top-20 z-10 h-[170px] w-[170px] rounded-full sm:h-[200px] sm:w-[200px] md:h-[250px] md:w-[250px] lg:h-[300px] lg:w-[300px]'
+            className='absolute invisible sm:invisible md:visible lg:visible right-[50px] top-20 z-10 h-[170px] w-[170px] rounded-full sm:h-[200px] sm:w-[200px] md:h-[250px] md:w-[250px] lg:h-[300px] lg:w-[300px] animate-slidein opacity-0 [--slidein-delay:500ms]'
             src='https://media.licdn.com/dms/image/D4D03AQG40y1wkBFb1Q/profile-displayphoto-shrink_800_800/0/1677610358836?e=2147483647&v=beta&t=QfUw8q2KBRhnQwq1jduNkJ18hMCFeSBzagebX0GdkZk'
             alt=''
           />
         </div>
         <div className='flex flex-col'>
-          <span className='text-[#1a1818] animate-bounce hover:text-[#daa520] text-center'>
+          <span className='text-[#1a1818] animate-bounce hover:text-[#daa520] text-center animate-slidein opacity-0 [--slidein-delay:500ms]'>
             ☻
           </span>
           <div className='flex'>
             <div className='flex w-0 md:w-1/2' />
-            <p className='ml-10 sm:ml-10 md:ml-0 lg:ml-0 flex justify-end pt-2 font-mono text-[#1a1818] md:w-1/2 pr-20'>
+            <p className='ml-5 sm:ml-10 md:ml-0 lg:ml-0 flex justify-end pt-2 font-mono text-[#1a1818] md:w-1/2 pr-20 animate-slidein opacity-0 [--slidein-delay:700ms]'>
               The cusp of art and technology has always fascinated me and I have
               never been afraid to just jump in and give it a go, whether it is
               Paint, Photoshop, Sketch or CSS. I’ve been designing with
@@ -55,7 +55,7 @@ export default function Page() {
           <div className='flex'>
             <div className='flex w-0 md:w-1/2' />
             <div className='flex gap-2 font-mono pt-4'>
-              <button className='group relative inline-flex items-center overflow-hidden rounded-full border ml-10 sm:ml-10 md:ml-0 lg:ml-0  border-[#1a1818] bg-[#1a1818] text-[#ece7e1] px-12 py-3 text-sm md:text-md lg:text-lg hover:text-[#1a1818]'>
+              <button className='group relative inline-flex items-center overflow-hidden rounded-full border ml-5 md:ml-0 lg:ml-0  border-[#1a1818] bg-[#1a1818] text-[#ece7e1] px-12 py-3 text-sm md:text-md lg:text-lg hover:text-[#1a1818] animate-slidein opacity-0 [--slidein-delay:900ms]'>
                 <span className='duration-400 ease absolute left-0 top-1/2 block h-0 w-full bg-[#ece7e1] opacity-100 transition-all group-hover:top-0 group-hover:h-full'></span>
                 <span className='ease absolute right-0 flex h-10 w-10 translate-x-full transform items-center justify-start duration-500 group-hover:-translate-x-2'>
                   <svg
@@ -82,7 +82,7 @@ export default function Page() {
                   </a>
                 </span>
               </button>
-              <button className='group relative inline-flex items-center overflow-hidden rounded-full border border-[#1a1818] px-12 py-3 text-sm md:text-md lg:text-lg text-[#1a1818]'>
+              <button className='group relative inline-flex items-center overflow-hidden rounded-full border border-[#1a1818] px-12 py-3 text-sm md:text-md lg:text-lg text-[#1a1818] animate-slidein opacity-0 [--slidein-delay:1000ms]'>
                 <span className='duration-400 ease absolute left-0 top-1/2 block h-0 w-full opacity-100 transition-all group-hover:top-0 group-hover:h-full'></span>
                 <span className='ease absolute right-0 flex h-10 w-10 translate-x-full transform items-center justify-start duration-500 group-hover:-translate-x-2'>
                   <svg
