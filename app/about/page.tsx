@@ -26,7 +26,7 @@ export default function Page() {
           </h2>
         </div>
         <div className='flex flex-row text-[#1a1818]'>
-          <h1 className='z-20 ml-10 md:ml-20 lg:ml-20 xlg:ml-20 mt-6 font-mono text-[30px] sm:text-[40px] md:text-[70px] lg:text-[100px] animate-slidein opacity-0 [--slidein-delay:500ms]'>
+          <h1 className='z-20 ml-10 md:ml-20 lg:ml-20 xlg:ml-20 mt-6 font-mono text-[25px] sm:text-[40px] md:text-[70px] lg:text-[100px] animate-slidein opacity-0 [--slidein-delay:500ms]'>
             ...I AM A JUNIOR <br />
             FRONT END DEVELOPER
           </h1>
@@ -48,7 +48,7 @@ export default function Page() {
               Paint, Photoshop, Sketch or CSS. I’ve been designing with
               computers since the day I first opened Microsoft Paint. Fast
               forward to 2023 and I’ve tried it all, from Digital Campaign
-              Design and Flash Actionscript to Web Design, Animation, HTML/CSS,
+              Design and Flash Actionscript to Web Design, Animation, HTgML/CSS,
               No-Code Web Development, Product Design and Product Management.
             </p>
           </div>
