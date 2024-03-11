@@ -4,7 +4,7 @@ const Footer: React.FC = () => {
   const currentTime = moment().format('HH:mm')
   return (
     <div className='flex flex-col justify-center font-mono'>
-      <div className='flex justify-center w-full'>
+      <div className='flex justify-center w-full container'>
         <button className='group relative inline-flex items-center overflow-hidden rounded-full border border-[#1a1818] px-12 py-3 text-lg text-[#1a1818] hover:text-[#d4cfc9] visible sm:visible md:visible lg:invisible w-[180px]'>
           <span className='duration-400 ease absolute left-0 top-1/2 block h-0 w-full bg-[#1a1818] opacity-100 transition-all group-hover:top-0 group-hover:h-full'></span>
           <span className='ease absolute right-0 flex h-10 w-10 translate-x-full transform items-center justify-start duration-500 group-hover:-translate-x-2'>

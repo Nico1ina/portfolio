@@ -15,7 +15,7 @@ export default function Page() {
         </div>
         {/*TODO: Fix this img so it doesn't give a warning*/}
         <img
-          className='lg:absolute md:absolute visible sm:visible md:invisible lg:ininvisible justify-center place-self-center h-[170px] w-[170px] rounded-full sm:h-[200px] sm:w-[200px] md:h-[250px] md:w-[250px] lg:h-[300px] lg:w-[300px]'
+          className='lg:absolute md:absolute visible hover:grayscale sm:hover:grayscale sm:visible md:invisible lg:ininvisible justify-center place-self-center h-[170px] w-[170px] rounded-full sm:h-[200px] sm:w-[200px] md:h-[250px] md:w-[250px] lg:h-[300px] lg:w-[300px]'
           src='https://media.licdn.com/dms/image/D4D03AQG40y1wkBFb1Q/profile-displayphoto-shrink_800_800/0/1677610358836?e=2147483647&v=beta&t=QfUw8q2KBRhnQwq1jduNkJ18hMCFeSBzagebX0GdkZk'
           alt=''
         />
@@ -55,7 +55,7 @@ export default function Page() {
           <div className='flex'>
             <div className='flex w-0 md:w-1/2' />
             <div className='flex gap-2 font-mono pt-4'>
-              <button className='group relative inline-flex items-center overflow-hidden rounded-full border ml-10 sm:ml-10 md:ml-0 lg:ml-0  border-[#1a1818] bg-[#1a1818] text-[#ece7e1] px-12 py-3 text-lg hover:text-[#1a1818]'>
+              <button className='group relative inline-flex items-center overflow-hidden rounded-full border ml-10 sm:ml-10 md:ml-0 lg:ml-0  border-[#1a1818] bg-[#1a1818] text-[#ece7e1] px-12 py-3 text-sm md:text-md lg:text-lg hover:text-[#1a1818]'>
                 <span className='duration-400 ease absolute left-0 top-1/2 block h-0 w-full bg-[#ece7e1] opacity-100 transition-all group-hover:top-0 group-hover:h-full'></span>
                 <span className='ease absolute right-0 flex h-10 w-10 translate-x-full transform items-center justify-start duration-500 group-hover:-translate-x-2'>
                   <svg
@@ -82,8 +82,8 @@ export default function Page() {
                   </a>
                 </span>
               </button>
-              <button className='group relative inline-flex items-center overflow-hidden rounded-full border border-[#1a1818] px-12 py-3 text-lg text-[#1a1818] hover:text-white'>
-                <span className='duration-400 ease absolute left-0 top-1/2 block h-0 w-full bg-[#1a1818] opacity-100 transition-all group-hover:top-0 group-hover:h-full'></span>
+              <button className='group relative inline-flex items-center overflow-hidden rounded-full border border-[#1a1818] px-12 py-3 text-sm md:text-md lg:text-lg text-[#1a1818]'>
+                <span className='duration-400 ease absolute left-0 top-1/2 block h-0 w-full opacity-100 transition-all group-hover:top-0 group-hover:h-full'></span>
                 <span className='ease absolute right-0 flex h-10 w-10 translate-x-full transform items-center justify-start duration-500 group-hover:-translate-x-2'>
                   <svg
                     className='h-5 w-5'
