@@ -14,6 +14,8 @@ const config: Config = {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'hero-pattern':
+          "url('https://media.licdn.com/dms/image/D4D03AQG40y1wkBFb1Q/profile-displayphoto-shrink_800_800/0/1677610358836?e=2147483647&v=beta&t=QfUw8q2KBRhnQwq1jduNkJ18hMCFeSBzagebX0GdkZk')",
       },
       keyframes: {
         slidein: {
@@ -52,6 +54,9 @@ const config: Config = {
             opacity: '0',
           },
         },
+      },
+      scrollBehavior: {
+        smooth: 'smooth',
       },
       animation: {
         // Existing fall animation

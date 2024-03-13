@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className='bg-[#ece7e1] justify-between'>
+      <body className='bg-[#1e1e21] justify-between'>
         <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
         <main className='flex-grow'>{children}</main>
       </body>
