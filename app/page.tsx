@@ -11,7 +11,7 @@ export default function Home() {
         <section id='hero' className='flex flex-col overflow-hidden relative'>
           <Menu />
           <div className='mx-5 sm:mx-20'>
-            <h1 className='text-3xl sm:text-5xl md:text-7xl lg:text-9xl animate-slidein opacity-0 [--slidein-delay:300ms] tracking-tight'>
+            <h1 className='text-4xl sm:text-5xl md:text-7xl lg:text-9xl animate-slidein opacity-0 [--slidein-delay:300ms] tracking-tight'>
               Nicolina Larsson
               <br />
               <span className='animate-slidein opacity-0 [--slidein-delay:500ms]'>
@@ -19,7 +19,7 @@ export default function Home() {
               </span>
             </h1>
             <div className='flex flex-row justify-between mb-10'>
-              <p className='text-md sm:text-xl md:text-3xl lg:text-3xl animate-slidein opacity-0 [--slidein-delay:500ms]'>
+              <p className='text-sm sm:text-xl md:text-3xl lg:text-3xl animate-slidein opacity-0 [--slidein-delay:500ms]'>
                 (Stockholm, Sweden - {currentTime})
               </p>
               <a

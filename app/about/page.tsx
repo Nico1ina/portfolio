@@ -6,7 +6,7 @@ export default function Page() {
       <main className='relative flex h-full bg-[#f5f3ef] scroll-smooth'>
         <div className='flex flex-col h-full'>
           <div className='flex flex-col lg:grid lg:grid-cols-2 h-full'>
-            <div className='px-20 pt-20'>
+            <div className='px-10 sm:px-20 pt-20'>
               <h3 className='overflow-hidden text-3xl mb-2 animate-slidein opacity-0 [--slidein-delay:300ms]'>
                 (About me)
               </h3>
