@@ -16,6 +16,8 @@ const config: Config = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
         'hero-pattern':
           "url('https://media.licdn.com/dms/image/D4D03AQG40y1wkBFb1Q/profile-displayphoto-shrink_800_800/0/1677610358836?e=2147483647&v=beta&t=QfUw8q2KBRhnQwq1jduNkJ18hMCFeSBzagebX0GdkZk')",
+        'nico-pattern':
+          "url('https://i0.wp.com/secrettrips.com/wp-content/uploads/2022/10/Secret-trips-the-edit-Global-Galleries-Louisiana-Museum-of-Modern-Art-2018_JeremyJachym_04.jpg?fit=2000%2C1498&ssl=1')",
       },
       keyframes: {
         slidein: {

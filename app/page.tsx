@@ -19,7 +19,7 @@ export default function Home() {
               </span>
             </h1>
             <div className='flex flex-row justify-between mb-5 sm:mb-10'>
-              <p className='text-sm sm:text-xl md:text-3xl lg:text-3xl animate-slidein opacity-0 [--slidein-delay:500ms]'>
+              <p className='text-xs sm:text-xl md:text-3xl lg:text-3xl animate-slidein opacity-0 [--slidein-delay:500ms]'>
                 (Stockholm, Sweden - {currentTime})
               </p>
               <a
@@ -45,7 +45,7 @@ export default function Home() {
           </div>
           <section
             id='image'
-            className='bg-hero-pattern h-lvh w-full justify-content align-center bg-fixed bg-cover sm:bg-contain'
+            className='bg-nico-pattern sm:bg-hero-pattern h-lvh w-full justify-content align-center sm:bg-fixed bg-cover bg-no-repeat'
           ></section>
         </section>
         <section
@@ -57,7 +57,7 @@ export default function Home() {
             top-notch stuff.
           </h2>
           <div className='flex flex-col justify-between'>
-            <div className='text-3xl'>
+            <div className='text-3xl md:ml-10'>
               <span className='invisible sm:visible'>←</span> About me{' '}
               <span className='visible sm:invisible'>↓</span>
             </div>
