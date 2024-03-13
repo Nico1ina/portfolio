@@ -1,17 +1,13 @@
 import FullScreenMenu from '@/src/ui/components/navigation/FullScreenMenu/FullScreenMenu'
+import Menu from '@/src/ui/components/navigation/Menu/Menu'
 
 export default function Page() {
   return (
     <>
       <main className='relative flex h-full bg-[#f5f3ef] scroll-smooth'>
         <div className='flex flex-col h-full relative'>
-          <div className='p-5 absolute z-10'>
-            <a
-              href='/'
-              className='text-[#1a1818] hover:text-[#d4cfc9] text-3xl transition delay-150 duration-200 ease-in-out hover:-translate-x-1 hover:scale-110 animate-slidein opacity-0 [--slidein-delay:300ms]'
-            >
-              ←
-            </a>
+          <div className='right-0 absolute z-10 flex flex-row justify-between'>
+            <FullScreenMenu />
           </div>
           <div className='flex flex-col lg:grid lg:grid-cols-2 h-full'>
             <div className='px-5 sm:px-20 pt-10 sm:pt-20'>

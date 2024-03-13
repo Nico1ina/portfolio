@@ -3,7 +3,7 @@ import moment from 'moment'
 const Footer: React.FC = () => {
   const currentTime = moment().format('HH:mm')
   return (
-    <div className='flex flex-col justify-center bg-[#1e1e21] text-[#f5f3ef]'>
+    <div className='flex flex-col justify-center font-mono bg-[#1e1e21] text-[#f5f3ef]'>
       <div className='flex justify-center w-full container'>
         <button className='group relative inline-flex items-center overflow-hidden rounded-full border border-[#f5f3ef] px-12 py-3 text-lg text-[#f5f3ef] hover:text-[#d4cfc9] visible sm:visible md:visible lg:invisible w-[180px] mt-10'>
           <span className='duration-400 ease absolute left-0 top-1/2 block h-0 w-full bg-[#1e1e21] opacity-100 transition-all group-hover:top-0 group-hover:h-full'></span>
@@ -23,7 +23,7 @@ const Footer: React.FC = () => {
               ></path>
             </svg>
           </span>
-          <span className='relative transform duration-700 group-hover:-translate-x-3'>
+          <span className='relative transform duration-700 group-hover:-translate-x-3 font-mono'>
             <a
               className='focus:outline-none'
               href='mailto:nicolinalarsson1@gmail.com?subject=Lets work together!'
@@ -33,7 +33,7 @@ const Footer: React.FC = () => {
           </span>
         </button>
       </div>
-      <div className='flex flex-col md:flex-col lg:flex-row text-center pb-5 justify-between'>
+      <div className='flex flex-col md:flex-col lg:flex-row font-mono text-center pb-5 justify-between'>
         <a
           href='mailto:nicolinalarsson1@gmail.com?subject=Lets work together!'
           className='invisible md:invisible lg:visible pl-10 group transition duration-300'

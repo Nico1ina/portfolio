@@ -23,7 +23,7 @@ export default function Home() {
                 (Stockholm, Sweden - {currentTime})
               </p>
               <a
-                href='#image'
+                href='#about'
                 data-twe-smooth-scroll-init
                 className='text-3xl animate-slidein opacity-0 [--slidein-delay:500ms] group transition duration-500 invisible lg:visible'
               >
@@ -33,28 +33,18 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section>
-          <div>
-            {/*TODO: CHANGE IMAGE
-                        <img
-              className='w-full mt-10 animate-slidein opacity-0 [--slidein-delay:500ms] group transition duration-500 bg-hero-pattern bg-fixed bg-cover'
-              src='https://media.licdn.com/dms/image/D4D03AQG40y1wkBFb1Q/profile-displayphoto-shrink_800_800/0/1677610358836?e=2147483647&v=beta&t=QfUw8q2KBRhnQwq1jduNkJ18hMCFeSBzagebX0GdkZk'
-              alt=''
-            />
-            */}
-          </div>
-          <section
-            id='image'
-            className='bg-nico-pattern sm:bg-hero-pattern h-lvh w-full justify-content align-center sm:bg-fixed bg-cover bg-no-repeat'
-          ></section>
-        </section>
+        <section
+          id='image'
+          className='bg-nico-pattern sm:bg-hero-pattern h-lvh w-full justify-content align-center sm:bg-fixed bg-cover'
+        ></section>
         <section
           id='about'
-          className='flex flex-col sm:grid sm:grid-cols-2 my-10'
+          className='flex flex-col sm:grid sm:grid-cols-[2fr_1fr] my-10'
         >
-          <h2 className='order-last sm:order-first sm:border-r border-black block text-4xl sm:text-7xl lg:text-8xl overflow-hidden sm:m-0 mx-10'>
+          <h2 className='order-last sm:order-first sm:border-r-2 border-black block text-4xl sm:text-4xl lg:text-5xl overflow-hidden sm:m-0 mx-10 lg:px-10'>
             I have always been driven to bla bla and I focus on producing
-            top-notch stuff.
+            top-notch stuff. I have always been driven to bla bla and I focus on
+            producing top-notch stuff.
           </h2>
           <div className='flex flex-col justify-between'>
             <div className='text-3xl md:ml-10'>
@@ -62,7 +52,7 @@ export default function Home() {
               <span className='visible sm:invisible'>↓</span>
             </div>
             {/*TODO: Create separate files for each SVG and import them that way*/}
-            <div className='flex flex-row gap-x-2 ml-10 mb-10 sm:mb-0'>
+            <div className='flex flex-row gap-x-2 ml-9 mb-10 sm:mb-0'>
               <a
                 href='https://www.linkedin.com/in/nicolina-larsson-8434a5206/'
                 target='_blank'
@@ -89,20 +79,22 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <hr className='border-t border-[#1a1818] my-8' />
+        <hr className='border-t-2 border-[#1a1818] my-8' />
         <section
           id='work'
-          className='flex flex-col sm:grid sm:grid-cols-2 mx-10'
+          className='flex flex-col sm:grid sm:grid-cols-[1fr_2fr] mx-10'
         >
           <div className='flex flex-col justify-between'>
             <div className='text-3xl mb-10 sm:mb-0'>
               <span className='visible sm:invisible'>↓&nbsp;</span>
-              What I do <span className='invisible sm:visible'>→</span>
+              What I do <span className='invisible sm:visible'>↘</span>
             </div>
           </div>
-          <h2 className='block text-4xl sm:text-7xl md:text-7xl lg:text-8xl overflow-hidden sm:border-l mb-8 border-black'>
+          <h2 className='block text-4xl sm:text-5xl md:text-5xl lg:text-5xl overflow-hidden sm:border-l-2 mb-8 border-black lg:px-10'>
             I have always been driven to bla bla and I focus on producing
-            top-notch stuff.
+            top-notch stuff. I have always been driven to bla bla and I focus on
+            producing top-notch stuff. I have always been driven to bla bla and
+            I focus on producing top-notch stuff.
           </h2>
         </section>
         <Footer />

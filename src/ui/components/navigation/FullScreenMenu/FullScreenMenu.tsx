@@ -33,17 +33,17 @@ const FullScreenMenu = () => {
           showSidebar ? 'translate-y-0 ' : 'translate-y-full'
         }`}
       >
-        <div id='mySidenav' className='font-serif'>
+        <div id='mySidenav'>
           <section className='text-[#1a1818]'>
-            <ul className='fixed inset-0 ml-5 flex text-left justify-center flex-col sans font-serif text-[50px] sm:text-[100px] md:text-[130px] lg:text-[140px] lg:mt-10'>
+            <ul className='fixed inset-0 ml-5 flex text-center justify-center flex-col sans  text-[50px] sm:text-[100px] md:text-[130px] lg:text-[140px] lg:mt-10'>
               <li className='tracking-widest hover:italic transition ease-in-out delay-150 hover:translate-x-20 duration-200'>
-                <a href='/'>━Home</a>
+                <a href='/'>Home</a>
               </li>
               <li className='tracking-widest hover:italic transition ease-in-out delay-150 hover:translate-x-20 duration-200'>
-                <a href='/'>━Work</a>
+                <a href='/'>Work</a>
               </li>
               <li className='tracking-widest hover:italic transition ease-in-out delay-150 hover:translate-x-20 duration-200'>
-                <a href='/about'>━About</a>
+                <a href='/about'>About</a>
               </li>
               <li className='tracking-widest hover:italic transition ease-in-out delay-150 hover:translate-x-20 duration-200'>
                 <a href='mailto:nicolinalarsson1@gmail.com?subject=Lets work together!'>
