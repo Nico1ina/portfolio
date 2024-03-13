@@ -18,7 +18,7 @@ export default function Home() {
                 Front End Designer
               </span>
             </h1>
-            <div className='flex flex-row justify-between mb-10'>
+            <div className='flex flex-row justify-between mb-5 sm:mb-10'>
               <p className='text-sm sm:text-xl md:text-3xl lg:text-3xl animate-slidein opacity-0 [--slidein-delay:500ms]'>
                 (Stockholm, Sweden - {currentTime})
               </p>
@@ -45,24 +45,24 @@ export default function Home() {
           </div>
           <section
             id='image'
-            className='bg-hero-pattern h-lvh justify-content align-center w-full bg-fixed bg-cover mb-5 sm:mb-0'
+            className='bg-hero-pattern h-lvh w-full justify-content align-center bg-fixed bg-cover sm:bg-contain'
           ></section>
         </section>
         <section
           id='about'
-          className='flex flex-col sm:grid sm:grid-cols-2 sm:m-10'
+          className='flex flex-col sm:grid sm:grid-cols-2 my-10'
         >
-          <h2 className='order-last sm:order-first sm:border-r border-black block text-5xl sm:text-7xl lg:text-8xl overflow-hidden m-10 sm:m-0'>
+          <h2 className='order-last sm:order-first sm:border-r border-black block text-4xl sm:text-7xl lg:text-8xl overflow-hidden sm:m-0 mx-10'>
             I have always been driven to bla bla and I focus on producing
             top-notch stuff.
           </h2>
           <div className='flex flex-col justify-between'>
-            <div className='text-4xl sm:ml-5'>
+            <div className='text-3xl'>
               <span className='invisible sm:visible'>←</span> About me{' '}
               <span className='visible sm:invisible'>↓</span>
             </div>
             {/*TODO: Create separate files for each SVG and import them that way*/}
-            <div className='flex flex-row gap-x-2 ml-10 sm:ml-5'>
+            <div className='flex flex-row gap-x-2 ml-10 mb-10 sm:mb-0'>
               <a
                 href='https://www.linkedin.com/in/nicolina-larsson-8434a5206/'
                 target='_blank'
@@ -92,15 +92,15 @@ export default function Home() {
         <hr className='border-t border-[#1a1818] my-8' />
         <section
           id='work'
-          className='flex flex-col sm:grid sm:grid-cols-2 m-10'
+          className='flex flex-col sm:grid sm:grid-cols-2 mx-10'
         >
           <div className='flex flex-col justify-between'>
-            <div className='text-4xl ml-5 mb-10 sm:mb-0'>
+            <div className='text-3xl mb-10 sm:mb-0'>
               <span className='visible sm:invisible'>↓&nbsp;</span>
               What I do <span className='invisible sm:visible'>→</span>
             </div>
           </div>
-          <h2 className='block text-5xl sm:text-7xl md:text-7xl lg:text-8xl overflow-hidden sm:border-l border-black pl-5'>
+          <h2 className='block text-4xl sm:text-7xl md:text-7xl lg:text-8xl overflow-hidden sm:border-l mb-8 border-black'>
             I have always been driven to bla bla and I focus on producing
             top-notch stuff.
           </h2>
