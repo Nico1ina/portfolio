@@ -10,8 +10,8 @@ export default function Home() {
       <main className='bg-[#f5f3ef] min-h-screen text-[#1a1818]'>
         <section id='hero' className='flex flex-col overflow-hidden relative'>
           <Menu />
-          <div className='mx-20'>
-            <h1 className='text-5xl sm:text-5xl md:text-7xl lg:text-9xl animate-slidein opacity-0 [--slidein-delay:300ms] tracking-tight'>
+          <div className='mx-5 sm:mx-20'>
+            <h1 className='text-3xl sm:text-5xl md:text-7xl lg:text-9xl animate-slidein opacity-0 [--slidein-delay:300ms] tracking-tight'>
               Nicolina Larsson
               <br />
               <span className='animate-slidein opacity-0 [--slidein-delay:500ms]'>
@@ -52,7 +52,7 @@ export default function Home() {
           id='about'
           className='flex flex-col sm:grid sm:grid-cols-2 sm:m-10'
         >
-          <h2 className='order-last sm:order-first sm:border-r border-black block text-6xl sm:text-7xl lg:text-8xl overflow-hidden m-10 sm:m-0'>
+          <h2 className='order-last sm:order-first sm:border-r border-black block text-5xl sm:text-7xl lg:text-8xl overflow-hidden m-10 sm:m-0'>
             I have always been driven to bla bla and I focus on producing
             top-notch stuff.
           </h2>
@@ -100,7 +100,7 @@ export default function Home() {
               What I do <span className='invisible sm:visible'>→</span>
             </div>
           </div>
-          <h2 className='block text-6xl sm:text-7xl md:text-7xl lg:text-8xl overflow-hidden sm:border-l border-black pl-5'>
+          <h2 className='block text-5xl sm:text-7xl md:text-7xl lg:text-8xl overflow-hidden sm:border-l border-black pl-5'>
             I have always been driven to bla bla and I focus on producing
             top-notch stuff.
           </h2>

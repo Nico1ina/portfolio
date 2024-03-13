@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
+import SmoothScrollWrapper from '@/src/lib/util/SmoothScroll'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -16,10 +17,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className='bg-[#1e1e21] justify-between'>
-        <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
-        <main className='flex-grow'>{children}</main>
-      </body>
+      <SmoothScrollWrapper>
+        <body className='bg-[#1e1e21] justify-between'>
+          <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
+          <main className='flex-grow'>{children}</main>
+        </body>
+      </SmoothScrollWrapper>
     </html>
   )
 }
