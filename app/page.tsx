@@ -35,7 +35,7 @@ export default function Home() {
         </section>
         <section
           id='image'
-          className='bg-nico-pattern sm:bg-hero-pattern h-lvh w-full justify-content align-center sm:bg-fixed bg-cover'
+          className='bg-hero-pattern sm:bg-nico-pattern h-lvh w-full justify-content align-center sm:bg-fixed bg-cover'
         ></section>
         <section
           id='about'

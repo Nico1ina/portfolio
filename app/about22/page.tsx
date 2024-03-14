@@ -47,7 +47,7 @@ export default function Page() {
         </div>
         <div className='flex flex-col'>
           <span className='text-[#1a1818] text-lg hover:text-[#daa520] text-center animate-slidein opacity-0 [--slidein-delay:500ms]'>
-            ☻
+            ☻━
           </span>
           <div className='flex'>
             <div className='flex w-0 md:w-1/2' />

@@ -47,7 +47,7 @@ const FullScreenMenu = () => {
               </li>
               <li className='tracking-widest hover:italic transition ease-in-out delay-150 hover:translate-x-20 duration-200'>
                 <a href='mailto:nicolinalarsson1@gmail.com?subject=Lets work together!'>
-                  ━Contact
+                  Contact
                 </a>
               </li>
             </ul>
