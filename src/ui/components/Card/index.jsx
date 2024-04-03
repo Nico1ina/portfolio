@@ -26,9 +26,7 @@ const Card = ({ i, title, src, link, progress, range, targetScale }) => {
         <h2>{title}</h2>
         <div className={styles.body}>
           <div className={styles.imageContainer}>
-            <a className={styles.url} href={link} target='_blank'>
-              See more
-            </a>
+            <a className={styles.url} href={link} target='_blank'></a>
             <motion.div className={styles.inner} style={{ scale: imageScale }}>
               <Image fill src={`/images/${src}`} alt='image' />
             </motion.div>

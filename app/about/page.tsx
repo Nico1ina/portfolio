@@ -1,6 +1,25 @@
+'use client'
 import FullScreenMenu from '@/src/ui/components/navigation/FullScreenMenu/FullScreenMenu'
+import { useScroll } from 'framer-motion'
+import { useEffect, useRef } from 'react'
+import Lenis from '@studio-freight/lenis'
 
 export default function Page() {
+  const container = useRef(null)
+  const { scrollYProgress } = useScroll({
+    target: container,
+  })
+
+  useEffect(() => {
+    const lenis = new Lenis()
+
+    function raf(time: number) {
+      lenis.raf(time)
+      requestAnimationFrame(raf)
+    }
+
+    requestAnimationFrame(raf)
+  })
   return (
     <>
       <main className='relative flex h-full bg-[#f5f3ef] scroll-smooth'>

@@ -1,9 +1,28 @@
+'use client'
 import Menu from '@/src/ui/components/navigation/Menu/Menu'
 import moment from 'moment'
 import Footer from '@/src/ui/components/navigation/Footer/Footer'
+import { useScroll } from 'framer-motion'
+import { useEffect, useRef } from 'react'
+import Lenis from '@studio-freight/lenis'
 
 export default function Home() {
   const currentTime = moment().format('HH:mm')
+  const container = useRef(null)
+  const { scrollYProgress } = useScroll({
+    target: container,
+  })
+
+  useEffect(() => {
+    const lenis = new Lenis()
+
+    function raf(time: number) {
+      lenis.raf(time)
+      requestAnimationFrame(raf)
+    }
+
+    requestAnimationFrame(raf)
+  })
   return (
     <>
       <main className='bg-[#f5f3ef] min-h-screen text-[#1a1818]'>
