@@ -41,7 +41,7 @@ export default function Home() {
           className='flex flex-col sm:grid sm:grid-cols-[2fr_1fr] my-10'
         >
           <h2 className='order-last sm:order-first sm:border-r-2 border-black block overflow-hidden text-4xl lg:text-4xl sm:m-0 mx-10 lg:px-10'>
-            I'm a Front End Developer (former Back End) with a passion for
+            I&apos;m a Front End Developer (former Back End) with a passion for
             captivating visual and user friendly experiences. Currently based in
             Stockholm, Sweden.
           </h2>
@@ -95,7 +95,7 @@ export default function Home() {
             producing top-notch stuff. I have always been driven to bla bla and
             I focus on producing top-notch stuff. I specialized in modular Front
             End development, focusing on creating reactive and digitally
-            accessible UI components based on Youwe's design system. My
+            accessible UI components based on Youwe&apos;s design system. My
             expertise includes using Storybook for storytelling and
             documentation, and leveraging technologies such as React,
             TypeScript, NextJS, and integrating with Apollo GraphQL for
