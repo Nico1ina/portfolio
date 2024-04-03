@@ -1,12 +1,11 @@
 import FullScreenMenu from '@/src/ui/components/navigation/FullScreenMenu/FullScreenMenu'
-import Menu from '@/src/ui/components/navigation/Menu/Menu'
 
 export default function Page() {
   return (
     <>
       <main className='relative flex h-full bg-[#f5f3ef] scroll-smooth'>
         <div className='flex flex-col h-full relative'>
-          <div className='right-0 absolute z-10 flex flex-row justify-between'>
+          <div className='right-0 fixed z-10 flex flex-row justify-between pt-4'>
             <FullScreenMenu />
           </div>
           <div className='flex flex-col lg:grid lg:grid-cols-2 h-full'>
@@ -21,7 +20,7 @@ export default function Page() {
                 </span>
               </h1>
               <h2 className='text-3xl lg:text-5xl pt-5 animate-slidein opacity-0 [--slidein-delay:500ms]'>
-                A Stockholm based Front End Designer with a Passion for
+                A Stockholm based Front End Developer with a Passion for
                 Captivating Visual Experiences.
               </h2>
               <p className='text-lg pt-10 pb-10 animate-slidein opacity-0 [--slidein-delay:700ms]'>

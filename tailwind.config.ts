@@ -18,6 +18,18 @@ const config: Config = {
         'nico-pattern': "url('../public/icons/source/IMG_1223.jpg')",
       },
       keyframes: {
+        infiniteScroll: {
+          from: { transform: 'translateX(0)' },
+          to: { transform: 'translateX(-100%)' },
+        },
+        marquee: {
+          '0%': { transform: 'translateX(0%)' },
+          '100%': { transform: 'translateX(-100%)' },
+        },
+        marquee2: {
+          '0%': { transform: 'translateX(100%)' },
+          '100%': { transform: 'translateX(0%)' },
+        },
         slidein: {
           from: {
             opacity: '0',
@@ -66,6 +78,9 @@ const config: Config = {
         caret:
           'typewriter 2s steps(11) forwards, blink 1s steps(11) infinite 2s',
         slidein: 'slidein 1s ease var(--slidein-delay, 0) forwards',
+        infiniteScroll: 'infiniteScroll 25s linear infinite',
+        marquee: 'marquee 25s linear infinite',
+        marquee2: 'marquee2 25s linear infinite',
       },
     },
   },

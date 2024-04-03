@@ -33,10 +33,10 @@ const Footer: React.FC = () => {
           </span>
         </button>
       </div>
-      <div className='flex flex-col md:flex-col lg:flex-row font-mono text-center pb-5 justify-between'>
+      <div className='flex flex-col lg:flex-row font-mono text-center pb-5 justify-between'>
         <a
           href='mailto:nicolinalarsson1@gmail.com?subject=Lets work together!'
-          className='invisible md:invisible lg:visible pl-10 group transition duration-300'
+          className='invisible lg:visible pl-10 group transition duration-300'
         >
           Send me a message →
           <span className='block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-[#bfbab4]'></span>
@@ -44,12 +44,13 @@ const Footer: React.FC = () => {
         <p>Copyright © Nicolina Larsson 2024</p>
         <a
           href='#hero'
-          className='invisible md:invisible lg:visible group transition duration-300 pr-10 mb-10'
+          className='invisible lg:visible group transition duration-300 pr-10 mb-10'
         >
           Scroll to top ↑
           <span className='block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-[#bfbab4]'></span>
         </a>
       </div>
+      <ul className='flex flex-row gap-2 justify-center visible sm:invisible'></ul>
     </div>
   )
 }
