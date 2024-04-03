@@ -1,50 +1,30 @@
-import FullScreenMenu from '@/src/ui/components/navigation/FullScreenMenu/FullScreenMenu'
-import { ArcCard } from '@/src/ui/components/navigation/CardTwo'
+/* eslint-disable @next/next/no-sync-scripts */
+/* eslint-disable @next/next/no-img-element */
+
+import styles from './Cool.module.scss'
 
 export default function Page() {
   return (
-    <div className='relative flex h-screen bg-[#f5f3ef] justify-center'>
-      <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
-      <div className='right-0 fixed z-10 flex flex-row justify-between pt-4'>
-        <FullScreenMenu />
-      </div>
-      <div className='flex flex-col md:flex-row items-center gap-y-10 md:gap-x-10 mt-10'>
-        <div className='md:absolute md:left-12 md:top-25'>
-          <ArcCard
-            name='Youwe Agency'
-            title='Bla bla bla'
-            since='nov 23 - april 24'
-          />
+    <div className={styles.container}>
+      <div className={styles.slider}>
+        <div className={styles.card}>
+          <img className={styles.img} src='./assets/01.jpg' alt='' />
+          <div className={styles.copy}>
+            <h1 className={styles.h1}>Youwe</h1>
+            <a href='https://youtube.com'>GO HERE</a>
+          </div>
         </div>
-        <div className='md:absolute md:right-25 md:top-25'>
-          <ArcCard
-            name='Edugrade'
-            title='Bla bla bla'
-            since='sep 22 - may 24'
-          />
+        <div className={styles.card}>
+          <img className={styles.img} src='./assets/02.jpg' alt='' />
+          <div className={styles.copy}>
+            <h1 className={styles.h1}>Edugrade</h1>
+          </div>
         </div>
-        <div className='md:absolute md:-bottom-1/4'>
-          <a href='https://github.com/Nico1ina' target='_blank'>
-            <ArcCard
-              name='GitHub'
-              title='A display of various projects exploring various technologies - both Front end and Back end.'
-              since='sep 22 - ongoing'
-            />
-          </a>
-        </div>
-        <div className=''>
-          <ArcCard
-            name='Edugrade 2'
-            title='Bla bla bla'
-            since='sep 22 - may 24'
-          />
-        </div>
-        <div className=''>
-          <ArcCard
-            name='Edugrade 3'
-            title='Bla bla bla'
-            since='sep 22 - may 24'
-          />
+        <div className={styles.card}>
+          <img className={styles.img} src='./assets/03.jpg' alt='' />
+          <div className={styles.copy}>
+            <h1 className={styles.h1}>Github</h1>
+          </div>
         </div>
       </div>
     </div>
