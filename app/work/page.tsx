@@ -1,52 +1,43 @@
-import FullScreenMenu from '@/src/ui/components/navigation/FullScreenMenu/FullScreenMenu'
-import { ArcCard } from '@/src/ui/components/navigation/CardTwo'
+'use client'
+import { projects } from '../../src/ui/components/data.js'
+import Card from '../../src/ui/components/Card/index.jsx'
+import { useScroll } from 'framer-motion'
+import { useEffect, useRef } from 'react'
+import Lenis from '@studio-freight/lenis'
 
-export default function Page() {
+export default function Home() {
+  const container = useRef(null)
+  const { scrollYProgress } = useScroll({
+    target: container,
+    offset: ['start start', 'end end'],
+  })
+
+  useEffect(() => {
+    const lenis = new Lenis()
+
+    function raf(time: number) {
+      lenis.raf(time)
+      requestAnimationFrame(raf)
+    }
+
+    requestAnimationFrame(raf)
+  })
+
   return (
-    <div className='relative flex h-screen bg-[#f5f3ef] justify-center'>
-      <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
-      <div className='right-0 fixed z-10 flex flex-row justify-between pt-4'>
-        <FullScreenMenu />
-      </div>
-      <div className='flex flex-col md:flex-row items-center gap-y-10 md:gap-x-10 mt-10'>
-        <div className='md:absolute md:left-12 md:top-25'>
-          <ArcCard
-            name='Youwe Agency'
-            title='Bla bla bla'
-            since='nov 23 - april 24'
+    <main ref={container}>
+      {projects.map((project, i) => {
+        const targetScale = 1 - (projects.length - i) * 0.05
+        return (
+          <Card
+            key={`p_${i}`}
+            i={i}
+            {...project}
+            progress={scrollYProgress}
+            range={[i * 0.25, 1]}
+            targetScale={targetScale}
           />
-        </div>
-        <div className='md:absolute md:right-25 md:top-25'>
-          <ArcCard
-            name='Edugrade'
-            title='Bla bla bla'
-            since='sep 22 - may 24'
-          />
-        </div>
-        <div className='md:absolute md:-bottom-1/4'>
-          <a href='https://github.com/Nico1ina' target='_blank'>
-            <ArcCard
-              name='GitHub'
-              title='A display of various projects exploring various technologies - both Front end and Back end.'
-              since='sep 22 - ongoing'
-            />
-          </a>
-        </div>
-        <div className=''>
-          <ArcCard
-            name='Edugrade 2'
-            title='Bla bla bla'
-            since='sep 22 - may 24'
-          />
-        </div>
-        <div className=''>
-          <ArcCard
-            name='Edugrade 3'
-            title='Bla bla bla'
-            since='sep 22 - may 24'
-          />
-        </div>
-      </div>
-    </div>
+        )
+      })}
+    </main>
   )
 }
