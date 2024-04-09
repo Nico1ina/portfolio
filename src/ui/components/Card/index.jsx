@@ -16,7 +16,6 @@ const Card = ({
   progress,
   range,
   targetScale,
-  timeline,
   destination,
 }) => {
   const router = useRouter()
