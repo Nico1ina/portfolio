@@ -40,6 +40,7 @@ export default function Home() {
               progress={scrollYProgress}
               range={[i * 0.25, 1]}
               targetScale={targetScale}
+              destination={'/'}
             />
           )
         })}

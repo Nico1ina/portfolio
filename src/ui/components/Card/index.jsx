@@ -5,6 +5,8 @@ import { useTransform, motion, useScroll } from 'framer-motion'
 import { useRef, useEffect } from 'react'
 
 import { scaleCenterImage, moveUpTitle } from '../Motion/initial/animations.js'
+import { useRouter } from 'next/navigation'
+import { gsap } from 'gsap'
 
 const Card = ({
   i,
@@ -15,7 +17,10 @@ const Card = ({
   range,
   targetScale,
   timeline,
+  destination,
 }) => {
+  const router = useRouter()
+  const timelineRef = useRef(null)
   const centerImageRef = useRef(null)
   const centerImageWrapperRef = useRef(null)
   const centerImageTitleRef = useRef(null)
@@ -30,10 +35,23 @@ const Card = ({
   const scale = useTransform(progress, range, [1, targetScale])
 
   useEffect(() => {
-    if (timeline) {
-      introAnimation(centerImageWrapperRef.current)
+    const timeline = gsap.timeline({
+      paused: true,
+      onComplete: () => {
+        if (destination) {
+          router.push(destination)
+        }
+      },
+    })
+    timelineRef.current = timeline
 
-      timeline
+    if (
+      timelineRef.current &&
+      centerImageWrapperRef.current &&
+      centerImageRef.current &&
+      centerImageTitleRef.current
+    ) {
+      timelineRef.current
         .add(
           scaleCenterImage(
             centerImageWrapperRef.current,
@@ -43,17 +61,24 @@ const Card = ({
         )
         .add(moveUpTitle(centerImageTitleRef.current), '<')
     }
-  }, [timeline])
 
-  const handlePlay = () => {
-    timeline?.play()
-    router.push(link)
+    return () => {
+      // Clean up timeline on unmount
+      if (timelineRef.current) {
+        timelineRef.current.kill()
+      }
+    }
+  }, [destination, router])
+
+  const handleNavigate = () => {
+    // Start animation
+    timelineRef.current?.play()
   }
 
   return (
     <a
-      href={link}
-      onClick={() => timeline?.play()}
+      // href={link}
+      onClick={handleNavigate}
       ref={centerImageWrapperRef}
       data-wrapper-center
     >
@@ -76,8 +101,8 @@ const Card = ({
                   fill
                   src={`/images/${src}`}
                   alt='image'
-                  ref={centerImageRef}
                   data-image-center
+                  ref={centerImageRef}
                 />
               </motion.div>
             </div>
