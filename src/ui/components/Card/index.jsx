@@ -89,7 +89,9 @@ const Card = ({
           }}
           className={styles.card}
         >
-          <h2 ref={centerImageTitleRef}>{title}</h2>
+          <h2 ref={centerImageTitleRef} className='hover:italic'>
+            {title}
+          </h2>
           <div className={styles.body}>
             <div className={styles.imageContainer}>
               <motion.div

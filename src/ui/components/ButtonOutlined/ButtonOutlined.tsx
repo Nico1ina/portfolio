@@ -14,7 +14,7 @@ const ButtonOutlined = () => {
           download
         >
           {/* TODO: Add pdf to this button. Also make the text a prop so it's not hardcoded*/}
-          RESUME PDF
+          RESUME
         </a>
       </span>
     </button>
