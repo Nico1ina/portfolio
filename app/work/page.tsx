@@ -30,6 +30,9 @@ export default function Home() {
         <FullScreenMenu />
       </div>
       <main ref={container}>
+        <h1 className='justify-center text-center font-thin pt-20 text-xs'>
+          [ Page under construction, scroll to see more ]
+        </h1>
         {projects.map((project, i) => {
           const targetScale = 1 - (projects.length - i) * 0.05
           return (
@@ -40,7 +43,7 @@ export default function Home() {
               progress={scrollYProgress}
               range={[i * 0.25, 1]}
               targetScale={targetScale}
-              destination={'/'}
+              destination={'https://github.com/Nico1ina'}
             />
           )
         })}

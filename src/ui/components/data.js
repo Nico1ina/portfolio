@@ -10,8 +10,18 @@ export const projects = [
     link: '/work/edugrade',
   },
   {
+    title: 'Weather Forecast App',
+    src: '01.jpg',
+    link: 'https://weather-app-iota-sooty.vercel.app',
+  },
+  {
     title: 'Github',
     src: '03.jpg',
     link: '/work/github',
+  },
+  {
+    title: 'Personal Website',
+    src: '02.jpg',
+    link: 'https://weather-app-iota-sooty.vercel.app',
   },
 ]

@@ -4,6 +4,16 @@ import React, { useState } from 'react'
 const FullScreenMenu = () => {
   const [showSidebar, setShowSidebar] = useState(false)
   const genericHamburgerLine = `h-0.5 w-7 my-1 bg-black rounded-full transition ease transform duration-300`
+  const menuItems = [
+    { id: 1, text: 'Home', href: '/' },
+    { id: 2, text: 'Work', href: '/work' },
+    { id: 3, text: 'About', href: '/about' },
+    {
+      id: 4,
+      text: 'Contact',
+      href: 'mailto:nicolinalarsson1@gmail.com?subject=Lets work together!',
+    },
+  ]
 
   return (
     <>
@@ -34,21 +44,12 @@ const FullScreenMenu = () => {
         }`}
       >
         <section id='mySidenav'>
-          <ul className='fixed inset-0 flex flex-col text-center justify-center text-[50px] sm:text-[100px] md:text-5lg'>
-            <li className='tracking-widest hover:italic'>
-              <a href='/'>Home</a>
-            </li>
-            <li className='tracking-widest hover:italic'>
-              <a href='/work'>Work</a>
-            </li>
-            <li className='tracking-widest hover:italic'>
-              <a href='/about'>About</a>
-            </li>
-            <li className='tracking-widest hover:italic'>
-              <a href='mailto:nicolinalarsson1@gmail.com?subject=Lets work together!'>
-                Contact
-              </a>
-            </li>
+          <ul className='fixed inset-0 flex flex-col text-center justify-center font-thin text-[50px] sm:text-[100px] md:text-5lg'>
+            {menuItems.map((item) => (
+              <li key={item.id} className='tracking-widest hover:italic'>
+                <a href={item.href}>{item.text}</a>
+              </li>
+            ))}
           </ul>
         </section>
       </div>

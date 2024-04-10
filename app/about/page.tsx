@@ -3,6 +3,9 @@ import FullScreenMenu from '@/src/ui/components/navigation/FullScreenMenu/FullSc
 import { useScroll } from 'framer-motion'
 import { useEffect, useRef } from 'react'
 import Lenis from '@studio-freight/lenis'
+import ButtonFilled from '@/src/ui/components/ButtonFilled/ButtonFilled'
+import ButtonOutlined from '@/src/ui/components/ButtonOutlined/ButtonOutlined'
+import RevealOnScroll from '@/src/ui/components/RevealOnScroll/RevealOnScroll'
 
 export default function Page() {
   const container = useRef(null)
@@ -29,100 +32,61 @@ export default function Page() {
           </div>
           <div className='flex flex-col lg:grid lg:grid-cols-2 h-full'>
             <div className='px-5 sm:px-20 pt-10 sm:pt-20'>
-              <h3 className='overflow-hidden text-3xl mb-2 animate-slidein opacity-0 [--slidein-delay:300ms]'>
+              <h3 className='overflow-hidden text-3xl font-thin mb-2 animate-slidein opacity-0 [--slidein-delay:300ms]'>
                 (About me)
               </h3>
               <h1 className='text-7xl lg:text-9xl tracking-wide animate-slidein opacity-0 [--slidein-delay:500ms]'>
                 Nicolina <br /> Larsson
-                <span className='text-[#1a1818] text-lg hover:text-[#daa520] text-center animate-slidein opacity-0 [--slidein-delay:500ms]'>
+                <span className='text-[#1a1818] hover:text-[#daa520] text-lg animate-slidein opacity-0 [--slidein-delay:500ms]'>
                   ☻
                 </span>
               </h1>
-              <h2 className='text-3xl lg:text-5xl pt-5 animate-slidein opacity-0 [--slidein-delay:500ms]'>
+              <h2 className='text-3xl lg:text-5xl font-thin pt-5 animate-slidein opacity-0 [--slidein-delay:700ms]'>
                 A Stockholm based Front End Developer with a Passion for
                 Captivating Visual Experiences.
               </h2>
-              <p className='text-lg pt-10 pb-10 animate-slidein opacity-0 [--slidein-delay:700ms]'>
-                As a digital designer and art director, I am passionate about
-                creating captivating visual experiences that leave a lasting
-                impression. Based in Berlin, I draw inspiration from the citys
-                vibrant energy and dynamic creative scene. With years of
-                experience in the industry, I have honed my skills in digital
-                design, art direction, interaction design, and motion design.
+              <p className='text-lg pt-10 pb-10 font-thin animate-slidein opacity-0 [--slidein-delay:900ms]'>
+                As a passionate front end developer, I specialize in modular
+                development, focusing on creating reactive and digitally
+                accessible UI components. My expertise lies in leveraging design
+                systems to craft intuitive and accessible interfaces. My journey
+                in the tech world began with a bachelors degree at EduGrade,
+                where I honed my skills in back end / Java with a focus on
+                object-oriented programming, REST APIs, and databases. This
+                foundation was crucial in my transition to modern web
+                technologies, including React, TypeScript, Next.js, and Apollo
+                GraphQL.
                 <br />
                 <br />
-                As a digital designer and art director, I am passionate about
-                creating captivating visual experiences that leave a lasting
-                impression. Based in Berlin, I draw inspiration from the citys
-                vibrant energy and dynamic creative scene. With years of
-                experience in the industry, I have honed my skills in digital
-                design, art direction, interaction design, and motion design.
+                My professional experience is marked by a deep commitment to
+                agile methodologies, particularly Scrum, which I believe are
+                essential for fostering innovation and collaboration within a
+                team. I&apos;ve had the privilege of working closely with
+                designers, developers, and product owners to ensure our
+                solutions are not only innovative but also aligned with industry
+                standards. My contributions to Youwe Agencys Headless
+                Accelerator project are a testament to my dedication to rigorous
+                testing, component development, and integration with design
+                systems to deliver visually appealing, technically sound,
+                accessible, and user-friendly solutions.
                 <br />
                 <br />
-                As a digital designer and art director, I am passionate about
-                creating captivating visual experiences that leave a lasting
-                impression. Based in Berlin, I draw inspiration from the citys
-                vibrant energy and dynamic creative scene. With years of
-                experience in the industry, I have honed my skills in digital
-                design, art direction, interaction design, and motion design.
+                Throughout my career, I&apos;ve produced stories and
+                documentation in Storybook, showcasing my ability to communicate
+                complex technical concepts in an accessible manner. I&apos;m
+                always eager to explore new technologies and methodologies,
+                driven by a desire to push the boundaries of what&apos;s
+                possible in web development. My goal is to continue contributing
+                to projects that challenge me, inspire me and ultimately make a
+                positive impact on users and the industry.
               </p>
-              <div className='flex gap-2 mb-5'>
-                <button className='group relative inline-flex items-center overflow-hidden rounded-full border border-[#1a1818] bg-[#1a1818] text-[#ece7e1] px-12 py-3 text-sm md:text-md lg:text-lg hover:text-[#1a1818]'>
-                  <span className='duration-400 ease absolute left-0 top-1/2 block h-0 w-full bg-[#f5f3ef] opacity-100 transition-all group-hover:top-0 group-hover:h-full'></span>
-                  <span className='ease absolute right-0 flex h-10 w-10 translate-x-full transform items-center justify-start duration-500 group-hover:-translate-x-2'>
-                    <svg
-                      className='h-5 w-5'
-                      fill='none'
-                      stroke='currentColor'
-                      viewBox='0 0 24 24'
-                      xmlns='http://www.w3.org/2000/svg'
-                    >
-                      <path
-                        strokeLinecap='round'
-                        strokeLinejoin='round'
-                        strokeWidth='1'
-                        d='M14 5l7 7m0 0l-7 7m7-7H3'
-                      ></path>
-                    </svg>
-                  </span>
-                  <span className='relative transform duration-700 group-hover:-translate-x-3'>
-                    <a
-                      className='focus:outline-none'
-                      href='mailto:nicolinalarsson1@gmail.com?subject=Lets work together!'
-                    >
-                      CONTACT
-                    </a>
-                  </span>
-                </button>
-                <button className='group relative inline-flex items-center overflow-hidden rounded-full border border-[#1a1818] px-12 py-3 text-sm md:text-md lg:text-lg text-[#1a1818]'>
-                  <span className='duration-400 ease absolute left-0 top-1/2 block h-0 w-full opacity-100 transition-all group-hover:top-0 group-hover:h-full'></span>
-                  <span className='ease absolute right-0 flex h-10 w-10 translate-x-full transform items-center justify-start duration-500 group-hover:-translate-x-2'>
-                    <svg
-                      className='h-5 w-5'
-                      fill='none'
-                      stroke='currentColor'
-                      viewBox='0 0 24 24'
-                      xmlns='http://www.w3.org/2000/svg'
-                    >
-                      <path
-                        strokeLinecap='round'
-                        strokeLinejoin='round'
-                        strokeWidth='1'
-                        d='M14 5l7 7m0 0l-7 7m7-7H3'
-                      ></path>
-                    </svg>
-                  </span>
-                  <span className='relative transform duration-700 group-hover:-translate-x-3 font-mono'>
-                    <a
-                      className='focus:outline-none'
-                      href='./directory/yourfile.pdf'
-                      download
-                    >
-                      {/* TODO: Add pdf to this button*/}
-                      RESUME PDF
-                    </a>
-                  </span>
-                </button>
+              <div className='flex gap-2 mb-5 font-thin'>
+                <RevealOnScroll>
+                  <ButtonFilled />
+                </RevealOnScroll>
+                <RevealOnScroll>
+                  <ButtonOutlined />
+                </RevealOnScroll>
               </div>
             </div>
             <div className='overflow-hidden order-first lg:order-last'>
