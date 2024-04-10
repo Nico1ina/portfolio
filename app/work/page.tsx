@@ -43,7 +43,7 @@ export default function Home() {
               progress={scrollYProgress}
               range={[i * 0.25, 1]}
               targetScale={targetScale}
-              destination={'https://github.com/Nico1ina'}
+              destination={project.link}
             />
           )
         })}

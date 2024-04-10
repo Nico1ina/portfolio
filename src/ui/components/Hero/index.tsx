@@ -1,6 +1,7 @@
 'use client'
-import react, { useRef, useEffect } from 'react'
+import { useRef, useEffect } from 'react'
 import Image from 'next/image'
+import FullScreenMenu from '../navigation/FullScreenMenu/FullScreenMenu'
 import {
   titleAnimation,
   fadeInOverlay,
@@ -22,25 +23,33 @@ const Hero = ({ src, title, description }: HeroProps) => {
   }, [])
 
   return (
-    <section className='relative flex justify-center items-center w-full h-screen overflow-hidden'>
-      <div
-        ref={overlayRef}
-        className='absolute inset-0 z-2 bg-gradient-to-b from-transparent via-transparent to-black opacity-0'
-      />
-      <Image
-        sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
-        priority
-        fill
-        className='w-full h-full object-cover'
-        src={src}
-        alt=''
-      />
-      <div className='absolute bottom-[9.6rem] left-[6.4rem] z-2 text-white flex gap-[16rem] items-center'>
-        <div className='block overflow-hidden'>
-          <h1 className='transform -translate-y-[100px]' ref={titleRef}>
-            {title}
-          </h1>
-          <p>{description}</p>
+    <section className='relative flex w-full h-screen overflow-hidden'>
+      <div className='right-0 fixed z-10 flex flex-row justify-between pt-4'>
+        <FullScreenMenu />
+      </div>
+      <div className='justify-center items-center'>
+        <div
+          ref={overlayRef}
+          className='absolute inset-0 z-2 bg-gradient-to-b from-transparent via-transparent to-black opacity-0'
+        />
+        <Image
+          sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
+          priority
+          fill
+          className='w-full h-full object-cover'
+          src={src}
+          alt=''
+        />
+        <div className='absolute bottom-[9.6rem] left-[6.4rem] font-thin z-2 text-white flex gap-[16rem] items-center'>
+          <div className='block overflow-hidden'>
+            <h1
+              className='text-4xl transform -translate-y-[100px]'
+              ref={titleRef}
+            >
+              {title}
+            </h1>
+            <p>{description}</p>
+          </div>
         </div>
       </div>
     </section>

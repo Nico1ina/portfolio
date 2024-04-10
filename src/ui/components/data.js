@@ -17,7 +17,7 @@ export const projects = [
   {
     title: 'Github',
     src: '03.jpg',
-    link: '/work/github',
+    link: 'https://github.com/Nico1ina',
   },
   {
     title: 'Personal Website',

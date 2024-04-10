@@ -125,12 +125,14 @@ export default function Home() {
               systems to craft intuitive and accessible interfaces.
               <br />
               <br />
-              My journey in the tech world began with a bachelors degree at
-              EduGrade, where I honed my skills in back end / Java with a focus
-              on object-oriented programming, REST APIs, and databases. This
-              foundation was crucial in my transition to modern web
-              technologies, including React, TypeScript, Next.js, and Apollo
-              GraphQL.{' '}
+              <RevealOnScroll>
+                My journey in the tech world began with a bachelors degree at
+                EduGrade, where I honed my skills in back end / Java with a
+                focus on object-oriented programming, REST APIs, and databases.
+                This foundation was crucial in my transition to modern web
+                technologies, including React, TypeScript, Next.js, and Apollo
+                GraphQL.{' '}
+              </RevealOnScroll>
               <span className='text-sm italic'>
                 (
                 <a href='/work' className='hover:underline'>
