@@ -117,7 +117,7 @@ export default function Home() {
           className='flex flex-col sm:grid sm:grid-cols-[1fr_2fr] mx-10 font-thin'
         >
           <div className='flex flex-col justify-between'>
-            <div className='text-2xl mb-10 sm:mb-0'>
+            <div className='text-2xl mt-5 md:mt-0 mb-10 sm:mb-0'>
               <RevealOnScroll>
                 <span className='visible sm:invisible'>↓&nbsp;</span>
                 What I do <span className='invisible sm:visible'>↘</span>
