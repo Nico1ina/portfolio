@@ -14,7 +14,7 @@ const config: Config = {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-        'hero-pattern': "url('../public/icons/source/IMG_12232.jpg')",
+        'hero-pattern': "url('../public/icons/source/IMG_122322.jpg')",
         'nico-pattern': "url('../public/icons/source/IMG_1223.jpg')",
       },
       keyframes: {
