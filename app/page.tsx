@@ -58,7 +58,7 @@ export default function Home() {
           id='about'
           className='flex flex-col sm:grid sm:grid-cols-[2fr_1fr] my-10 font-thin'
         >
-          <h2 className='order-last sm:order-first sm:border-r-2 border-black block overflow-hidden text-3xl lg:text-3xl sm:m-0 mx-10 lg:px-10'>
+          <h2 className='order-last sm:order-first sm:border-r-2 border-black block overflow-hidden text-2xl md:text-3xl sm:m-0 mx-10 lg:px-10'>
             <RevealOnScroll>
               I&apos;m a Front End Developer (former Back End) with a passion
               for captivating visual and user friendly experiences. Currently
@@ -125,7 +125,7 @@ export default function Home() {
             </div>
           </div>
           <RevealOnScroll>
-            <h2 className='block text-3xl overflow-hidden sm:border-l-2 mb-8 border-black sm:px-10'>
+            <h2 className='block text-2xl md:text-3xl overflow-hidden sm:border-l-2 mb-8 border-black sm:px-10'>
               As a passionate front end developer, I specialize in modular
               development, focusing on creating reactive and digitally
               accessible UI components. My expertise lies in leveraging design
