@@ -105,7 +105,7 @@ const Card = ({
                 <Image
                   fill
                   src={`/images/${src}`}
-                  alt='image'
+                  alt=''
                   data-image-center
                   ref={centerImageRef}
                 />

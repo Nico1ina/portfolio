@@ -6,7 +6,7 @@ export default function Home() {
       <Hero
         title='Personal Website'
         src='/images/03.jpg'
-        description='Java, Spring, REST APIs, Postman, Azure DevOps, MySql and databases.'
+        description='React, TypeScript, NextJS, Tailwind CSS, SCSS.'
       />
       <p className='m-5 font-thin'>
         My portfolio web app is a personal project built during my free time.
