@@ -15,13 +15,13 @@ export const projects = [
     link: 'https://weather-app-iota-sooty.vercel.app',
   },
   {
-    title: 'Github',
+    title: 'Personal Website',
     src: '03.jpg',
-    link: 'https://github.com/Nico1ina',
+    link: '/work/personal',
   },
   {
-    title: 'Personal Website',
+    title: 'Github',
     src: '02.jpg',
-    link: 'https://weather-app-iota-sooty.vercel.app',
+    link: 'https://github.com/Nico1ina',
   },
 ]

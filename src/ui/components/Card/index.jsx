@@ -80,6 +80,7 @@ const Card = ({
       onClick={handleNavigate}
       ref={centerImageWrapperRef}
       data-wrapper-center
+      className='group'
     >
       <div ref={container} className={styles.cardContainer}>
         <motion.div
@@ -91,7 +92,7 @@ const Card = ({
         >
           <h2
             ref={centerImageTitleRef}
-            className='hover:italic text-center font-thin font-5xl'
+            className='group-hover:italic text-center font-thin'
           >
             {title}
           </h2>

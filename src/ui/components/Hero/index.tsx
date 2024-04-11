@@ -48,7 +48,9 @@ const Hero = ({ src, title, description }: HeroProps) => {
             >
               {title}
             </h1>
-            <p>{description}</p>
+            <p className='animate-slidein opacity-0 [--slidein-delay:700ms]'>
+              {description}
+            </p>
           </div>
         </div>
       </div>

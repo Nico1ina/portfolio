@@ -54,8 +54,10 @@ export default function Page() {
                 where I honed my skills in back end / Java with a focus on
                 object-oriented programming, REST APIs, and databases. This
                 foundation was crucial in my transition to modern web
-                technologies, including React, TypeScript, Next.js, and Apollo
-                GraphQL.
+                technologies, including{' '}
+                <span className='font-light'>
+                  React, TypeScript, Next.js, and Apollo GraphQL.
+                </span>
                 <br />
                 <br />
                 My professional experience is marked by a deep commitment to
