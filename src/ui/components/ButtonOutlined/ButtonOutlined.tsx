@@ -10,10 +10,10 @@ const ButtonOutlined = () => {
       <span className='relative transform duration-700 group-hover:-translate-x-3 font-mono'>
         <a
           className='focus:outline-none'
-          href='./directory/yourfile.pdf'
-          download
+          href='/NicolinaLarsson.pdf'
+          target='_blank'
+          rel='noopener noreferrer'
         >
-          {/* TODO: Add pdf to this button. Also make the text a prop so it's not hardcoded*/}
           RESUME PDF
         </a>
       </span>
