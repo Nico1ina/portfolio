@@ -53,6 +53,12 @@ const Hero = ({ src, title, description }: HeroProps) => {
             </p>
           </div>
         </div>
+        <div className='absolute bottom-0 left-0 right-0 flex z-20 text-white font-thin text-sm'>
+          <div className='flex flex-row justify-between w-full px-4'>
+            <p>← Previous Project</p>
+            <p>Next Project →</p>
+          </div>
+        </div>
       </div>
     </section>
   )

@@ -94,7 +94,7 @@ export default function Page() {
             <div className='overflow-hidden order-first lg:order-last'>
               <img
                 className='h-hlv lg:h-screen lg:fixed top-0 animate-slidein opacity-0 [--slidein-delay:300ms]'
-                src='https://media.licdn.com/dms/image/D4D03AQG40y1wkBFb1Q/profile-displayphoto-shrink_800_800/0/1677610358836?e=2147483647&v=beta&t=QfUw8q2KBRhnQwq1jduNkJ18hMCFeSBzagebX0GdkZk'
+                src='https://media.licdn.com/dms/image/D4D03AQGQjh8hBpJLpQ/profile-displayphoto-shrink_800_800/0/1713032622852?e=1718236800&v=beta&t=LPgk2VTh0QyflXIIrO5QRBoWb4AMqjJIVQcZ2qN5CLo'
                 alt=''
               />
             </div>
