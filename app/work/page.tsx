@@ -26,7 +26,7 @@ export default function Home() {
 
   return (
     <>
-      <div className='right-0 fixed z-10 flex flex-row justify-between pt-4'>
+      <div className='right-0 fixed z-999 flex flex-row justify-between pt-4'>
         <FullScreenMenu />
       </div>
       <main ref={container}>
