@@ -14,7 +14,7 @@ const ButtonOutlined = () => {
           target='_blank'
           rel='noopener noreferrer'
         >
-          RESUME PDF
+          RESUME
         </a>
       </span>
     </button>
