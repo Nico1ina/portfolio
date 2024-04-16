@@ -12,15 +12,15 @@ interface HeroProps {
   src: string
   title: string
   description?: string
+  body?: string
 }
 
-const Hero = ({ src, title, description }: HeroProps) => {
+const Hero = ({ src, title, description, body }: HeroProps) => {
   const overlayRef = useRef(null)
   const titleRef = useRef(null)
   const [currentProjectIndex, setCurrentProjectIndex] = useState(0)
 
   useEffect(() => {
-    // Assuming fadeInOverlay and titleAnimation are defined elsewhere
     fadeInOverlay(overlayRef.current!)
     titleAnimation(titleRef.current!)
   }, [])
@@ -77,6 +77,7 @@ const Hero = ({ src, title, description }: HeroProps) => {
           </div>
         </div>
       </div>
+      <p className='m-5 font-thin'> {currentProject.body}</p>
     </section>
   )
 }
