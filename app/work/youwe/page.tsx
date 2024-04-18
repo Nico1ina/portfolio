@@ -5,7 +5,7 @@ export default function Home() {
     <>
       <Hero
         title='Youwe'
-        src='/images/03.jpg'
+        src='/images/05.jpg'
         description='React, TypeScript, Tailwind CSS, NextJS, Storybook and Apollo GraphQL.'
       />
       <p className='m-5 font-thin'>
@@ -18,6 +18,14 @@ export default function Home() {
         <br /> My role involved close collaboration in an agile team working
         closely with designers, other developers and product owners.
       </p>
+      <div className='flex justify-end items-right p-5 w-full'>
+        <a
+          href='/work'
+          className='hover:underline text-black font-light pb-2 text-sm'
+        >
+          [ Back to projects page ]
+        </a>
+      </div>
     </>
   )
 }

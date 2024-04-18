@@ -1,7 +1,7 @@
 export const projects = [
   {
     title: 'Youwe Agency',
-    src: '03.jpg',
+    src: '05.jpg',
     link: '/work/youwe',
   },
   {
@@ -16,7 +16,7 @@ export const projects = [
   },
   {
     title: 'Edugrade',
-    src: '05.jpg',
+    src: '03.jpg',
     link: '/work/edugrade',
   },
   {

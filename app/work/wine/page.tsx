@@ -39,13 +39,13 @@ export default function Home() {
         }`}
       >
         <img
-          className='sm:h-[300px] h-auto py-10 hover:scale-110 transition duration-300'
+          className='sm:h-[300px] invisible sm:visible h-auto py-10 hover:scale-110 transition duration-300'
           src='/images/Skärmavbild 2024-04-18 kl. 15.47.53.png'
           alt=''
           onClick={handleImageClick}
         />
         <img
-          className='sm:h-[300px] h-auto py-10 hover:scale-110 transition duration-300'
+          className='sm:h-[300px] invisible sm:visible h-auto py-10 hover:scale-110 transition duration-300'
           src='/images/Skärmavbild 2024-04-18 kl. 16.15.48.png'
           alt=''
           onClick={handleImageClick}

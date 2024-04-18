@@ -5,7 +5,7 @@ export default function Home() {
     <>
       <Hero
         title='Edugrade'
-        src='/images/05.jpg'
+        src='/images/03.jpg'
         description='Java, Spring, REST APIs, Postman, Azure DevOps, MySql and databases.'
       />
       <p className='m-5 font-thin'>

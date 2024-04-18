@@ -31,8 +31,7 @@ export default function Home() {
       </div>
       <main ref={container}>
         <h1 className='justify-center text-center font-thin pt-20 text-xs'>
-          [ Click on each card to read more about my previous work and projects
-          ]
+          [ Scroll and click a card to read more ]
         </h1>
         {projects.map((project, i) => {
           const targetScale = 1 - (projects.length - i) * 0.05
