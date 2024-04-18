@@ -40,7 +40,7 @@ const Hero = ({ src, title, description }: HeroProps) => {
           src={src}
           alt=''
         />
-        <div className='absolute bottom-[4.6rem] sm:bottom-[9.6rem] left-[1.4rem] sm:left-[6.4rem] font-thin z-2 text-white flex gap-[16rem] items-center'>
+        <div className='absolute bottom-[4.6rem] sm:bottom-[9.6rem] left-[1.4rem] sm:left-[6.4rem] font-thin z-2 text-black flex gap-[16rem] items-center'>
           <div className='block overflow-hidden'>
             <h1
               className='text-4xl transform -translate-y-[100px]'
@@ -51,12 +51,6 @@ const Hero = ({ src, title, description }: HeroProps) => {
             <p className='animate-slidein opacity-0 [--slidein-delay:800ms]'>
               {description}
             </p>
-          </div>
-        </div>
-        <div className='absolute bottom-0 left-0 right-0 flex z-20 text-white font-thin text-sm'>
-          <div className='flex flex-row justify-between w-full px-4'>
-            <p>← Previous Project</p>
-            <p>Next Project →</p>
           </div>
         </div>
       </div>

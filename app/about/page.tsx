@@ -51,9 +51,11 @@ export default function Page() {
                 accessible UI components. My expertise lies in leveraging design
                 systems to craft intuitive and accessible interfaces. My journey
                 in the tech world began with a bachelors degree at EduGrade,
-                where I honed my skills in back end / Java with a focus on
-                object-oriented programming, REST APIs, and databases. This
-                foundation was crucial in my transition to modern web
+                where I honed my skills in back end / Java with a focus on{' '}
+                <span className='font-light'>
+                  object-oriented programming, REST APIs, and databases.
+                </span>{' '}
+                This foundation was crucial in my transition to modern web
                 technologies, including{' '}
                 <span className='font-light'>
                   React, TypeScript, Next.js, and Apollo GraphQL.

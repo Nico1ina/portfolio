@@ -1,27 +1,27 @@
 export const projects = [
   {
     title: 'Youwe Agency',
-    src: '05.jpg',
+    src: '03.jpg',
     link: '/work/youwe',
   },
   {
-    title: 'Edugrade',
-    src: '04.jpg',
-    link: '/work/edugrade',
+    title: '',
+    src: 'Skärmavbild 2024-04-18 kl. 11.47.13.png',
+    link: '/work/wine',
   },
   {
     title: 'Weather Forecast App',
     src: '01.jpg',
-    link: 'https://weather-app-iota-sooty.vercel.app',
+    link: '/work/weather',
   },
   {
-    title: 'Personal Website',
-    src: '03.jpg',
-    link: '/work/personal',
+    title: 'Edugrade',
+    src: '05.jpg',
+    link: '/work/edugrade',
   },
   {
     title: 'Github',
-    src: '02.jpg',
+    src: '04.jpg',
     link: 'https://github.com/Nico1ina',
   },
 ]

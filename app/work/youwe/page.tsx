@@ -5,7 +5,7 @@ export default function Home() {
     <>
       <Hero
         title='Youwe'
-        src='/images/05.jpg'
+        src='/images/03.jpg'
         description='React, TypeScript, Tailwind CSS, NextJS, Storybook and Apollo GraphQL.'
       />
       <p className='m-5 font-thin'>

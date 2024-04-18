@@ -5,7 +5,7 @@ export default function Home() {
     <>
       <Hero
         title='Edugrade'
-        src='/images/04.jpg'
+        src='/images/05.jpg'
         description='Java, Spring, REST APIs, Postman, Azure DevOps, MySql and databases.'
       />
       <p className='m-5 font-thin'>
@@ -26,6 +26,14 @@ export default function Home() {
         </a>{' '}
         page to see some of the projects I&apos;ve worked on during my studies.
       </p>
+      <div className='flex justify-end items-right p-5 w-full'>
+        <a
+          href='/work'
+          className='hover:underline text-black font-light pb-2 text-sm'
+        >
+          [ Back to projects page ]
+        </a>
+      </div>
     </>
   )
 }
