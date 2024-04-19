@@ -12,15 +12,17 @@ export default function Home() {
     <>
       <Hero
         title='Wine Shop'
-        src='/images/Skärmavbild 2024-04-18 kl. 11.47.13.png'
+        src='/images/03.jpg'
         description='React, JavaScript, Tailwind CSS, REST API, JSON.'
       />
       <p className='m-5 font-thin'>
-        At EduGrade I studied a range of technical subjects like Java, object
-        oriented programming, REST APIs and databases. I also learned about
-        DevOps, design patterns and software architecture. In addition, I gained
-        knowledge in agile methodologies like Scrum, as well as Java web
-        services and software testing.
+        This project is a dynamic Natural Wine Shop built with React and
+        JavaScript. It&apos;s styled with Tailwind CSS and powered by data
+        fetched from a REST API. This combination of technologies allows for a
+        responsive, visually appealing and data driven online store. Reacts
+        component based architecture ensures a smooth user experience, while
+        Tailwind CSS utility first approach simplifies the styling process,
+        making the application both functional and visually appealing.
         <br />
         <br />
         Visit my{' '}
@@ -34,18 +36,22 @@ export default function Home() {
         here.
       </p>
       <div
-        className={`flex flex-row gap-x-3 justify-center items-center sm:h-[300px] h-auto transition-transform duration-200 ${
-          isEnlarged ? 'transform scale-150' : ''
-        }`}
+        className={`flex flex-col sm:flex-row gap-x-3 justify-center items-center sm:h-[300px] h-auto`}
       >
         <img
-          className='sm:h-[300px] invisible sm:visible h-auto py-10 hover:scale-110 transition duration-300'
+          className='sm:h-[300px] h-auto py-3 md:py-10 md:hover:scale-150 transition duration-300'
+          src='/images/Skärmavbild 2024-04-18 kl. 11.47.13.png'
+          alt=''
+          onClick={handleImageClick}
+        />
+        <img
+          className='sm:h-[300px] h-aut py-3 md:py-10 md:hover:scale-150 transition duration-300'
           src='/images/Skärmavbild 2024-04-18 kl. 15.47.53.png'
           alt=''
           onClick={handleImageClick}
         />
         <img
-          className='sm:h-[300px] invisible sm:visible h-auto py-10 hover:scale-110 transition duration-300'
+          className='sm:h-[300px] h-auto py-3 md:py-10 md:hover:scale-150 transition duration-300'
           src='/images/Skärmavbild 2024-04-18 kl. 16.15.48.png'
           alt=''
           onClick={handleImageClick}

@@ -35,18 +35,16 @@ export default function Home() {
         here.
       </p>
       <div
-        className={`flex flex-row gap-x-3 justify-center items-center sm:h-[300px] h-auto transition-transform duration-200 ${
-          isEnlarged ? 'transform scale-150' : ''
-        }`}
+        className={`flex flex-col sm:flex-row gap-x-3 justify-center items-center sm:h-[300px] h-auto`}
       >
         <img
-          className='sm:h-[300px] invisible sm:visible h-auto py-10 hover:scale-110 transition duration-300'
+          className='sm:h-[300px] h-auto py-3 md:py-10 hover:scale-150 transition duration-300'
           src='/images/Skärmavbild 2024-04-18 kl. 15.39.44.png'
           alt=''
           onClick={handleImageClick}
         />
         <img
-          className='sm:h-[300px] invisible sm:visible h-auto py-10 hover:scale-110 transition duration-300'
+          className='sm:h-[300px] h-auto py-3 md:py-10 hover:scale-150 transition duration-300'
           src='/images/Skärmavbild 2024-04-18 kl. 15.48.29.png'
           alt=''
           onClick={handleImageClick}

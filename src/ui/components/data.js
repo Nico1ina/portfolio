@@ -5,8 +5,8 @@ export const projects = [
     link: '/work/youwe',
   },
   {
-    title: '',
-    src: 'Skärmavbild 2024-04-18 kl. 11.47.13.png',
+    title: 'Wine Shop',
+    src: '03.jpg',
     link: '/work/wine',
   },
   {
@@ -16,7 +16,7 @@ export const projects = [
   },
   {
     title: 'Edugrade',
-    src: '03.jpg',
+    src: '02.jpg',
     link: '/work/edugrade',
   },
   {

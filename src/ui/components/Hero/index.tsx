@@ -40,7 +40,7 @@ const Hero = ({ src, title, description }: HeroProps) => {
           src={src}
           alt=''
         />
-        <div className='absolute bottom-[4.6rem] sm:bottom-[9.6rem] left-[1.4rem] sm:left-[6.4rem] font-thin z-2 text-black flex gap-[16rem] items-center'>
+        <div className='absolute bottom-[4.6rem] sm:bottom-[9.6rem] left-[1.4rem] sm:left-[6.4rem] font-thin z-2 text-white flex gap-[16rem] items-center'>
           <div className='block overflow-hidden'>
             <h1
               className='text-4xl transform -translate-y-[100px]'
