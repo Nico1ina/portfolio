@@ -44,7 +44,9 @@ export default function Home() {
         />
       </div>
       <div>
-        <p className='flex justify-center items-center font-thin'>Toggle</p>
+        <p className='flex justify-center items-center font-thin italic mb-10'>
+          Toggle
+        </p>
       </div>
       <div
         className={`flex flex-col sm:flex-row gap-x-3 justify-center items-center sm:h-[300px] h-auto`}
@@ -63,7 +65,9 @@ export default function Home() {
         />
       </div>
       <div>
-        <p className='flex justify-center items-center font-thin'>Accordion </p>
+        <p className='flex justify-center items-center font-thin italic mb-10'>
+          Accordion
+        </p>
       </div>
       <div
         className={`flex flex-col sm:flex-row gap-x-3 justify-center items-center sm:h-[300px] h-auto`}
@@ -82,7 +86,7 @@ export default function Home() {
         />
       </div>
       <div>
-        <p className='flex justify-center items-center font-thin'>
+        <p className='flex justify-center items-center font-thin italic mb-10'>
           Pill & Loading Spinner{' '}
         </p>
       </div>
@@ -103,8 +107,8 @@ export default function Home() {
         />
       </div>
       <div>
-        <p className='flex justify-center items-center font-thin'>
-          Content card (Hover state to the right)
+        <p className='flex justify-center items-center font-thin italic mb-10'>
+          Content card
         </p>
       </div>
       <div className='flex justify-end items-right p-5 w-full'>
